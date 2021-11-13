@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none; }
+  * a {
+    color: inherit; }
+
+body header {
+  width: 100%;
+  height: 80px;
+  background-color: #00445d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; }
+  body header .logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; }
+    body header .logo__container .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 40px;
+      background-color: #f49619;
+      color: white;
+      font-size: 1.5rem; }
+      body header .logo__container .logo .logo__text {
+        font-family: "Playfair Display", serif; }
+        body header .logo__container .logo .logo__text span {
+          font-family: "Poppins", sans-serif; }
+  body header nav {
+    padding-right: 30px;
+    z-index: 100; }
+    body header nav ul {
+      display: flex; }
+      body header nav ul li {
+        list-style: none;
+        padding: 0 10px;
+        color: white;
+        text-decoration: none;
+        position: relative; }
+      body header nav ul a:after {
+        opacity: 0;
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f49619;
+        transition: width 0.4s; }
+      body header nav ul a:hover::after {
+        width: 40%;
+        opacity: 1; }
+
+body .home {
+  position: relative;
+  height: 95vh; }
+  body .home__bg-container {
+    position: absolute; }
+    body .home__bg-container .home__bg {
+      object-fit: cover;
+      height: 95vh;
+      min-height: 700px;
+      width: 100%; }
+  body .home__title {
+    position: relative;
+    display: flex;
+    height: 95vh;
+    width: 30%;
+    justify-content: center;
+    float: right;
+    background-color: white;
+    flex-direction: column;
+    padding-bottom: 3%; }
+    body .home__title .home__text {
+      font-size: 5em;
+      color: #242424;
+      font-weight: 600;
+      margin-left: 60px;
+      line-height: 1; }
+    body .home__title .home__button {
+      background-color: #4c7031;
+      color: white;
+      font-size: 1.3em;
+      margin: 16px 0 0 60px;
+      width: max-content;
+      padding: 10px 15px; }
+
+body main #old-goo,
+body main #filter {
+  display: none; }
+
+body main .padre {
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  z-index: 10;
+  top: -30px; }
+  body main .padre .hijo {
+    width: 400px;
+    height: 100%;
+    background-color: #00445d;
+    position: absolute;
+    right: -360px;
+    border-radius: 20px;
+    filter: url(#old-goo); }
+    body main .padre .hijo:active {
+      right: 0px;
+      transition: all 0.5s ease; }
+    body main .padre .hijo nav ul {
+      display: flex;
+      flex-direction: column;
+      padding: 65% 40px; }
+      body main .padre .hijo nav ul li {
+        list-style: none;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        position: relative; }
+      body main .padre .hijo nav ul a:after {
+        opacity: 0;
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f49619;
+        transition: width 0.4s; }
+      body main .padre .hijo nav ul a:hover::after {
+        width: 40%;
+        opacity: 1; }
+    body main .padre .hijo .burbuja {
+      width: 50px;
+      height: 50px;
+      background-color: #00445d;
+      position: relative;
+      left: -30px;
+      top: 420px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body main .padre .hijo .burbuja:active {
+        transition: all 0.5s ease;
+        transform: rotate(180deg); }
+      body main .padre .hijo .burbuja p {
+        font-size: 2em;
+        color: white; }
+
+body main .relleno {
+  height: 100vh; }
