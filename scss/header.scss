@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: $color-orange-ligth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  .logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 40px;
+      background-color: $color-orange;
+      color: white;
+      font-size: 1.5rem;
+      .logo__text {
+        font-family: $font-cursiva;
+        span {
+          font-family: $font-minuscula;
+        }
+      }
+    }
+  }
+  nav {
+    padding-right: 30px;
+    z-index: 100;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        margin: 0 25px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: $color-green;
+        text-decoration: none;
+        position: relative;
+        font-size: .8em;
+      }
+      // Alternativa Subrayado
+      // a:after {
+      //   opacity: 0;
+      //   content: "";
+      //   width: 0;
+      //   height: 2px;
+      //   position: absolute;
+      //   bottom: -5px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   background: $color-orange;
+      //   transition: width 0.4s;
+      // }
+      // a:hover::after {
+      //   width: 40%;
+      //   opacity: 1;
+      // }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.home {
+  position: relative;
+  height: 800px;
+  &__bg-container {
+    position: absolute;
+    .home__bg {
+      object-fit: cover;
+      height: 800px;
+      min-height: 700px;
+      width: 100%;
+      filter: brightness(0.8);
+    }
+  }
+  &__title {
+    position: relative;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+    .home__text {
+      font-size: 5em;
+      color: white;
+      font-weight: 500;
+      margin-left: 60px;
+      line-height: 1;
+      span {
+        font-family: $font-cursiva;
+      }
+    }
+    .home__button {
+      background-color: $color-orange;
+      color: $color-blue;
+      font-size: .8em;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 30px 0 0 0;
+    }
+  }
+}
