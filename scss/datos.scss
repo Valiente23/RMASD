@@ -1,0 +1,44 @@
+.datos__container {
+    width: 100%;
+    margin: 30px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .datos__card {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 250px;
+        height: auto;
+        margin: 0 20px;
+        border-radius: 24px;
+        box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
+        text-align: center;
+
+        .datos__title {
+            font-size: 2em;
+            font-family: $font-cursiva;
+            color: $color-black;
+            font-weight: 500;
+            max-width: 900px;
+            text-align: center;
+
+            .bold {
+                font-family: $font-cursiva;
+                font-weight: 800;
+            }
+        }
+
+        .datos__subtitle {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 20px 0;
+            color: $color-orange;
+        }
+
+    }
+}

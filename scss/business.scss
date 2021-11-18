@@ -26,7 +26,7 @@
       }
     }
     .business__subtitle {
-      font-size: 1em;
+      font-size: 1.2em;
       font-weight: 400;
       margin: 20px 0;
     }
@@ -53,6 +53,13 @@
           height: 120px;
           border-radius: 50%;
           background-color: $color-blue;
+          display: flex;
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%;
+
+          }
         }
         .business__title {
           font-family: $font-cursiva;
@@ -71,6 +78,13 @@
         border-radius: 100px 24px 24px 24px;
         .business__img {
           background-color: $color-green;
+          display: flex;
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%;
+
+          }
         }
       }
       .business__card-tech {
@@ -80,6 +94,13 @@
         border-radius: 24px 24px 100px 24px;
         .business__img {
           background-color: $color-orange;
+          display: flex;
+          img {
+            margin: 0 auto;
+            align-self: center;
+            width: 50%;
+
+          }
         }
       }
     }
