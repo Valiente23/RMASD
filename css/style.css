@@ -9,84 +9,86 @@
 
 header {
   width: 100%;
-  height: 80px;
-  background-color: #ffcaa0;
+  height: 100px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100; }
+  z-index: 100;
+  position: fixed; }
   header .logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px; }
+    width: max-content;
+    padding: 0 0 0 135px; }
     header .logo__container .logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 70px;
-      height: 60px;
+      width: 86px;
+      height: 86px;
       background-color: #f49619;
       color: white;
-      font-size: 1.5rem;
+      font-size: 2em;
       border-radius: 50%; }
       header .logo__container .logo .logo__text {
         font-family: "Playfair Display", serif; }
         header .logo__container .logo .logo__text span {
           font-family: "Poppins", serif; }
   header nav {
-    padding-right: 30px;
+    padding-right: 135px;
     z-index: 100; }
     header nav ul {
       display: flex; }
       header nav ul li {
         list-style: none;
         margin: 0 25px;
-        padding: 10px 20px;
+        padding: 10px 15px;
         border-radius: 10px;
-        color: white;
+        color: #333333;
         font-weight: 1000;
         text-decoration: none;
         position: relative;
-        font-size: 1.2em; }
+        font-size: 1.5em; }
         header nav ul li a:after {
           opacity: 0;
           content: "";
           width: 0;
-          height: 2px;
+          height: 4px;
           position: absolute;
-          bottom: -5px;
+          bottom: 8px;
           left: 50%;
           transform: translateX(-50%);
-          background: #f49619;
+          background: #4c7031;
           transition: width 0.4s; }
         header nav ul li a:hover::after {
-          width: 50%;
+          width: 65%;
           opacity: 1; }
 
 .home {
   position: relative;
-  height: 800px; }
+  height: 900px; }
   .home__bg-container {
     position: absolute;
     width: 100%; }
     .home__bg-container .home__bg {
       object-fit: cover;
-      height: 800px;
+      height: 900px;
       min-height: 700px;
       width: 100%;
       filter: brightness(0.8); }
   .home__title {
     position: relative;
     display: flex;
-    height: 800px;
+    height: 900px;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-bottom: 3%; }
     .home__title .home__text {
-      font-size: 5em;
+      font-size: 6em;
       color: white;
       font-weight: 500;
       margin-left: 60px;
@@ -95,19 +97,28 @@ header {
         font-family: "Playfair Display", serif; }
     .home__title .home__button {
       background-color: #f49619;
-      color: #00445d;
-      font-size: .8em;
+      color: #ffece1;
+      width: 170px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
       font-weight: 600;
       padding: 10px 20px;
       border-radius: 10px;
-      margin: 30px 0 0 0; }
+      margin: 30px 0 0 0;
+      transition: .3s; }
       .home__title .home__button:hover {
-        color: white; }
+        background: #4c7031; }
+
+#business {
+  height: 150px; }
 
 .business {
   width: 100%;
-  height: 900px;
-  padding: 100px 0;
+  height: max-content;
+  margin: 0 0 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,21 +148,24 @@ header {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 30px 0; }
+    margin: 100px 0; }
     .business__cards-container {
       display: flex; }
       .business__cards-container .business__card {
         display: flex;
-        flex-direction: column;
+        position: relative;
+        flex-direction: column-reverse;
         align-items: center;
-        width: 250px;
-        height: 350px;
-        margin: 0 20px;
+        width: 270px;
+        height: 240px;
+        margin: 0 40px;
         border-radius: 24px;
-        box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899); }
+        box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2); }
         .business__cards-container .business__card .business__img {
-          width: 120px;
-          height: 120px;
+          position: absolute;
+          top: -65px;
+          width: 182px;
+          height: 182px;
           border-radius: 50%;
           background-color: #00445d;
           display: flex; }
@@ -161,14 +175,10 @@ header {
             width: 40%; }
         .business__cards-container .business__card .business__title {
           font-family: "Playfair Display", serif;
-          color: #242424;
-          font-weight: 700;
-          margin: 15px 0; }
-        .business__cards-container .business__card .business__subtitle {
-          font-size: 1em;
-          font-weight: 400;
-          text-align: center;
-          margin: 0 8%; }
+          font-size: 1.5em;
+          color: #333333;
+          font-weight: 800;
+          margin: 0 0 60px 0; }
       .business__cards-container .business__card-people {
         border-radius: 100px 24px 24px 24px; }
         .business__cards-container .business__card-people .business__img {
@@ -179,9 +189,11 @@ header {
             align-self: center;
             width: 40%; }
       .business__cards-container .business__card-tech {
-        border-radius: 100px 24px 24px 24px; }
+        border-radius: 24px;
+        position: relative;
+        bottom: -30px; }
       .business__cards-container .business__card-business {
-        border-radius: 24px 24px 100px 24px; }
+        border-radius: 24px 100px 24px 24px; }
         .business__cards-container .business__card-business .business__img {
           background-color: #f49619;
           display: flex; }
@@ -189,11 +201,16 @@ header {
             margin: 0 auto;
             align-self: center;
             width: 50%; }
+  .business .business__subtitle {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1090; }
 
 .digital {
   width: 100%;
   height: 700px;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
   .digital__container {
     width: 90%;
     height: 100%;
@@ -262,6 +279,188 @@ header {
             color: white;
             text-align: center; }
 
+.services {
+  width: 100%;
+  height: max-content;
+  margin: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .services__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .services__text .services__title {
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
+      color: #333333;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 80px; }
+    .services__text .services__subtitle {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: 300;
+      margin: 70px 0;
+      max-width: 1020px; }
+      .services__text .services__subtitle span {
+        font-weight: 500; }
+  .services__cards {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 0; }
+    .services__cards-container {
+      display: flex;
+      align-items: flex-end; }
+      .services__cards-container .services__card {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 270px;
+        height: 240px;
+        margin: 0 40px;
+        border-radius: 24px;
+        box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2); }
+        .services__cards-container .services__card .services__img {
+          position: absolute;
+          top: -65px;
+          width: 182px;
+          height: 182px;
+          border-radius: 50%;
+          background-color: #00445d;
+          display: flex; }
+          .services__cards-container .services__card .services__img img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%; }
+        .services__cards-container .services__card .services__title {
+          font-family: "Poppins", serif;
+          font-size: 1.5em;
+          text-align: center;
+          color: #333333;
+          font-weight: 400;
+          margin: 0 0 35px 0;
+          max-width: 200px;
+          color: white; }
+      .services__cards-container .services__card-green {
+        border-radius: 100px 24px 24px 24px;
+        background-color: #4c7031; }
+        .services__cards-container .services__card-green .services__img {
+          background-color: white;
+          display: flex; }
+          .services__cards-container .services__card-green .services__img img {
+            margin: 0 auto;
+            align-self: center;
+            width: 40%; }
+      .services__cards-container .services__card-blue {
+        border-radius: 24px;
+        position: relative;
+        background-color: #00445d;
+        height: 270px; }
+        .services__cards-container .services__card-blue .services__img {
+          background-color: white;
+          top: -40px; }
+          .services__cards-container .services__card-blue .services__img img {
+            width: 30%; }
+      .services__cards-container .services__card-orange {
+        border-radius: 24px 100px 24px 24px;
+        background-color: #f49619; }
+        .services__cards-container .services__card-orange .services__img {
+          background-color: white;
+          display: flex; }
+          .services__cards-container .services__card-orange .services__img img {
+            margin: 0 auto;
+            align-self: center;
+            width: 50%; }
+  .services .services__desc {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1200px;
+    font-family: "Playfair Display", serif;
+    color: #4c7031;
+    background-color: #ffece1;
+    padding: 50px 60px;
+    margin: 70px 0 0 0;
+    border-radius: 50px; }
+    .services .services__desc span {
+      font-weight: 700;
+      font-family: "Playfair Display", serif; }
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .stages__title {
+    width: max-content;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2em; }
+  .stages__desc {
+    max-width: 1020px;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 80px 0; }
+  .stages__cards .stages__card {
+    width: 900px;
+    min-height: 100px;
+    background-color: red;
+    border-radius: 24px 100px 24px  24px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center; }
+    .stages__cards .stages__card-title {
+      display: flex;
+      align-items: center;
+      min-height: 100px;
+      border-radius: 24px 100px 24px  24px;
+      background-color: grey;
+      font-weight: 400px;
+      font-size: 1.5em;
+      color: #00445d;
+      padding: 0 0 0 30px; }
+    .stages__cards .stages__card-subtitle {
+      font-size: 1.5em;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 0 0 25px; }
+  .stages__cards .stages__card-cream {
+    background-color: #ffe0c5; }
+    .stages__cards .stages__card-cream .stages__card-title {
+      width: 230px;
+      background-color: #ffcaa0; }
+    .stages__cards .stages__card-cream .stages__card-subtitle {
+      max-width: 560px; }
+  .stages__cards .stages__card-orange {
+    background-color: #ECB976; }
+    .stages__cards .stages__card-orange .stages__card-title {
+      width: 290px;
+      background-color: #f49619; }
+    .stages__cards .stages__card-orange .stages__card-subtitle {
+      max-width: 360px; }
+  .stages__cards .stages__card-green {
+    background-color: #618C40; }
+    .stages__cards .stages__card-green .stages__card-title {
+      width: 350px;
+      background-color: #4c7031;
+      color: #ffece1; }
+    .stages__cards .stages__card-green .stages__card-subtitle {
+      max-width: 360px;
+      color: #ffece1; }
+  .stages__cards .stages__card-blue {
+    background-color: #056E95; }
+    .stages__cards .stages__card-blue .stages__card-title {
+      width: 410px;
+      background-color: #00445d;
+      color: #ffece1; }
+    .stages__cards .stages__card-blue .stages__card-subtitle {
+      max-width: 360px;
+      color: #ffece1; }
+
 .datos__container {
   width: 100%;
   margin: 50px 0 50px 0;
@@ -284,7 +483,7 @@ header {
     .datos__container .datos__card .datos__title {
       font-size: 2em;
       font-family: "Playfair Display", serif;
-      color: #242424;
+      color: #333333;
       font-weight: 500;
       max-width: 900px;
       text-align: center; }
@@ -298,58 +497,89 @@ header {
       color: #f49619; }
 
 .valores {
-  width: 90%;
-  position: relative;
-  left: 10%;
-  right: 0px;
-  height: 400px;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  border-radius: 24px 0px 0px 100px;
-  background-image: linear-gradient(#FCEEE9, #ECF8F8); }
-  .valores .valores__container {
-    margin: auto;
-    width: 70%;
-    height: 70%;
-    position: relative;
+  width: 100%;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  height: max-content; }
+  .valores .valores__title-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    .valores .valores__container .valores__text h2 {
-      text-align: center;
-      font-size: 2rem; }
-    .valores .valores__container .valores__text ul {
-      display: flex; }
-      .valores .valores__container .valores__text ul li {
-        list-style: none;
-        padding: 20px;
-        font-size: 1.5rem;
-        font-weight: 900; }
-      .valores .valores__container .valores__text ul .simple {
-        color: #4c7031; }
-      .valores .valores__container .valores__text ul .cercano {
-        color: #00445d; }
-      .valores .valores__container .valores__text ul .adaptable {
-        color: #f49619; }
-    .valores .valores__container .valores__img {
-      width: 100%;
-      height: 90%;
-      padding: 20px;
-      position: relative;
-      left: 20%;
-      right: 0px;
-      background-image: url(../imgs/rural.png);
-      background-position: center center;
-      background-size: cover;
-      border-radius: 24px 0px 24px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    color: #333333;
+    height: 100px;
+    margin: 35px 0; }
+    .valores .valores__title-container .valores__title {
+      font-family: "Playfair Display", serif;
+      margin: 0 10px; }
+    .valores .valores__title-container .valores__logo {
+      font-family: "Playfair Display", serif;
+      background-color: #f49619;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      align-content: center;
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      color: white;
+      font-weight: 500; }
+      .valores .valores__title-container .valores__logo-text {
+        font-family: "Playfair Display", serif; }
+  .valores .valores__container {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0; }
+    .valores .valores__container .valores__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px; }
+      .valores .valores__container .valores__text ul {
+        display: flex;
+        flex-direction: column;
+        width: max-content; }
+        .valores .valores__container .valores__text ul li {
+          list-style: none;
+          font-weight: 700;
+          font-size: 2.5em;
+          padding: 15px;
+          display: flex;
+          width: max-content; }
+          .valores .valores__container .valores__text ul li img {
+            width: 50px;
+            margin: 0 15px 5px; }
+        .valores .valores__container .valores__text ul .simple {
+          color: #f49619; }
+        .valores .valores__container .valores__text ul .cercano {
+          color: #00445d; }
+        .valores .valores__container .valores__text ul .adaptable {
+          color: #129fd2; }
+    .valores .valores__container .valores__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1000px;
+      height: 340px;
+      background-image: url(../imgs/rural.png);
+      border-radius: 56px 0 0 56px;
+      box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2); }
       .valores .valores__container .valores__img p {
         color: white;
-        text-align: center;
-        width: 50%; }
+        font-weight: 300;
+        font-family: "Poppins", serif;
+        font-size: 1.8em;
+        max-width: 800px; }
+        .valores .valores__container .valores__img p span {
+          font-weight: 600; }
 
 footer .footer_container {
   display: flex;

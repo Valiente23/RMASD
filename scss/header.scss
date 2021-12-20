@@ -1,27 +1,27 @@
 header {
   width: 100%;
-  height: 80px;
-  background-color: $color-orange-ligth;
+  height: 100px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-
+  position: fixed;
   .logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-
+    width: max-content;
+    padding: 0 0 0 135px;
     .logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 70px;
-      height: 60px;
+      width: 86px;
+      height: 86px;
       background-color: $color-orange;
       color: white;
-      font-size: 1.5rem;
+      font-size: 2em;
       border-radius: 50%;
 
       .logo__text {
@@ -35,7 +35,7 @@ header {
   }
 
   nav {
-    padding-right: 30px;
+    padding-right: 135px;
     z-index: 100;
 
     ul {
@@ -44,30 +44,30 @@ header {
       li {
         list-style: none;
         margin: 0 25px;
-        padding: 10px 20px;
+        padding: 10px 15px;
         border-radius: 10px;
-        color: white;
+        color: $color-black;
         font-weight: 1000;
         text-decoration: none;
         position: relative;
-        font-size: 1.2em;
+        font-size: 1.5em;
 
         // Alternativa Subrayado
         a:after {
           opacity: 0;
           content: "";
           width: 0;
-          height: 2px;
+          height: 4px;
           position: absolute;
-          bottom: -5px;
+          bottom: 8px;
           left: 50%;
           transform: translateX(-50%);
-          background: $color-orange;
+          background: $color-green;
           transition: width 0.4s;
         }
 
         a:hover::after {
-          width: 50%;
+          width: 65%;
           opacity: 1;
         }
       }

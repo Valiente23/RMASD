@@ -1,14 +1,13 @@
 .home {
   position: relative;
-  height: 800px;
-
+  height: 900px;
   &__bg-container {
     position: absolute;
     width: 100%;
 
     .home__bg {
       object-fit: cover;
-      height: 800px;
+      height: 900px;
       min-height: 700px;
       width: 100%;
       filter: brightness(0.8);
@@ -18,7 +17,7 @@
   &__title {
     position: relative;
     display: flex;
-    height: 800px;
+    height: 900px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -26,7 +25,7 @@
     padding-bottom: 3%;
 
     .home__text {
-      font-size: 5em;
+      font-size: 6em;
       color: white;
       font-weight: 500;
       margin-left: 60px;
@@ -39,15 +38,20 @@
 
     .home__button {
       background-color: $color-orange;
-      color: $color-blue;
-      font-size: .8em;
+      color: $color-cream;
+      width: 170px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
       font-weight: 600;
       padding: 10px 20px;
       border-radius: 10px;
       margin: 30px 0 0 0;
-
+      transition: .3s;
       &:hover {
-        color: white;
+        background: $color-green;
       }
 
     }
