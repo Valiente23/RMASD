@@ -1,13 +1,14 @@
 .home {
   position: relative;
   height: 900px;
+
   &__bg-container {
     position: absolute;
     width: 100%;
 
     .home__bg {
       object-fit: cover;
-      height: 900px;
+      height: 800px;
       min-height: 700px;
       width: 100%;
       filter: brightness(0.8);
@@ -37,6 +38,7 @@
     }
 
     .home__button {
+      cursor: pointer;
       background-color: $color-orange;
       color: $color-cream;
       width: 170px;
@@ -50,8 +52,9 @@
       border-radius: 10px;
       margin: 30px 0 0 0;
       transition: .3s;
+
       &:hover {
-        background: $color-green;
+        color: $color-green;
       }
 
     }

@@ -1,44 +1,59 @@
-.datos__container {
-    width: 100%;
-    margin: 50px 0 50px 0;
+.datos {
+    margin-top: 250px;
+    height: 500px;
+    background-image: url(../imgs/img-datos.JPG);
+    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    .datos__card {
-        padding: 30px;
+    .datos_card {
+        background-color: $color-blue;
+        color: white;
+        border-radius: 100px 24px 24px 24px;
+        position: absolute;
+        width: 573.15px;
+        height: 424px;
+        left: 138px;
+        top: 4200px;
+        letter-spacing: 1px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
-        width: 250px;
-        height: auto;
-        margin: 0 20px;
-        border-radius: 24px;
-        box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
-        text-align: center;
 
-        .datos__title {
-            font-size: 2em;
-            font-family: $font-cursiva;
-            color: $color-black;
-            font-weight: 500;
-            max-width: 900px;
+        h3 {
+            color: $color-orange;
+            letter-spacing: 1px;
+            font-size: 30px;
+            position: relative;
             text-align: center;
+            top: 20px;
+        }
 
-            .bold {
-                font-family: $font-cursiva;
-                font-weight: 800;
+        ul {
+            margin-top: 40px;
+            position: relative;
+            left: 50px;
+            color: #FFECE1;
+
+            li {
+                margin-top: 20px;
             }
         }
+    }
 
-        .datos__subtitle {
-            font-size: 1.2em;
-            font-weight: 400;
-            margin: 20px 0;
-            color: $color-orange;
+    .datos_text {
+        color: $color-blue;
+        font-size: 50px;
+        font-style: italic;
+        font-family: $font-cursiva;
+        position: absolute;
+        width: 584px;
+        height: 200px;
+        left: 900px;
+        top: 4450px;
+
+        span {
+            font-weight: 900;
+            font-family: $font-cursiva;
         }
-
     }
 }

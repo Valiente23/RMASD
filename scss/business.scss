@@ -1,6 +1,7 @@
-#business{
+#business {
   height: 150px;
 }
+
 .business {
   width: 100%;
   height: max-content;
@@ -9,10 +10,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .business__title {
       font-size: 3em;
       font-family: $font-cursiva;
@@ -20,28 +23,34 @@
       font-weight: 500;
       max-width: 900px;
       text-align: center;
+
       .bold {
         font-family: $font-cursiva;
         font-weight: 800;
       }
+
       .minuscula {
         color: $color-blue;
       }
     }
+
     .business__subtitle {
       font-size: 1.2em;
       font-weight: 400;
       margin: 20px 0;
     }
   }
+
   &__cards {
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     margin: 100px 0;
+
     &-container {
       display: flex;
+
       .business__card {
         display: flex;
         position: relative;
@@ -52,6 +61,7 @@
         margin: 0 40px;
         border-radius: 24px;
         box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2);
+
         .business__img {
           position: absolute;
           top: -65px;
@@ -60,12 +70,14 @@
           border-radius: 50%;
           background-color: $color-blue;
           display: flex;
+
           img {
             margin: 0 auto;
             align-self: center;
             width: 40%;
           }
         }
+
         .business__title {
           font-family: $font-cursiva;
           font-size: 1.5em;
@@ -73,13 +85,16 @@
           font-weight: 800;
           margin: 0 0 60px 0;
         }
-        
+
       }
+
       .business__card-people {
         border-radius: 100px 24px 24px 24px;
+
         .business__img {
           background-color: $color-green;
           display: flex;
+
           img {
             margin: 0 auto;
             align-self: center;
@@ -88,16 +103,20 @@
           }
         }
       }
+
       .business__card-tech {
         border-radius: 24px;
         position: relative;
         bottom: -30px;
       }
+
       .business__card-business {
         border-radius: 24px 100px 24px 24px;
+
         .business__img {
           background-color: $color-orange;
           display: flex;
+
           img {
             margin: 0 auto;
             align-self: center;
@@ -108,10 +127,11 @@
       }
     }
   }
+
   .business__subtitle {
-          font-size: 1.5em;
-          font-weight: 400;
-          text-align: center;
-          max-width: 1090;
-        }
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1090;
+  }
 }

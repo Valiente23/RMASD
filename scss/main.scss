@@ -18,9 +18,18 @@ $font-cursiva: "Playfair Display", serif;
   box-sizing: border-box;
   font-family: $font-minuscula;
   text-decoration: none;
+
   a {
     color: inherit;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
 }
 
 @import "header.scss";
@@ -29,6 +38,6 @@ $font-cursiva: "Playfair Display", serif;
 @import "digital.scss";
 @import "services.scss";
 @import "stages.scss";
-@import "datos.scss";
 @import "valores.scss";
+@import "datos.scss";
 @import "footer.scss";

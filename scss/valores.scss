@@ -4,6 +4,7 @@
   align-content: flex-end;
   flex-direction: column;
   height: max-content;
+
   .valores__title-container {
     display: flex;
     justify-content: center;
@@ -15,10 +16,12 @@
     color: $color-black;
     height: 100px;
     margin: 35px 0;
+
     .valores__title {
       font-family: $font-cursiva;
       margin: 0 10px;
     }
+
     .valores__logo {
       font-family: $font-cursiva;
       background-color: $color-orange;
@@ -31,11 +34,13 @@
       border-radius: 100%;
       color: white;
       font-weight: 500;
+
       &-text {
         font-family: $font-cursiva;
       }
     }
   }
+
   .valores__container {
     width: 100%;
     height: max-content;
@@ -44,27 +49,32 @@
     justify-content: space-between;
     align-items: center;
     margin: 35px 0;
+
     .valores__text {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 500px;
+
       ul {
         display: flex;
         flex-direction: column;
         width: max-content;
-        li{
+
+        li {
           list-style: none;
           font-weight: 700;
           font-size: 2.5em;
           padding: 15px;
           display: flex;
           width: max-content;
-          img{
+
+          img {
             width: 50px;
             margin: 0 15px 5px;
           }
         }
+
         .simple {
           color: $color-orange;
         }
@@ -81,20 +91,22 @@
 
     .valores__img {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-evenly;
       width: 1000px;
-      height: 340px;
-      background-image: url(../imgs/rural.png);
-      border-radius: 56px 0 0 56px;
-      box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2);
+      height: 400px;
+      background-image: url(../imgs/img-sobre-nosotros.png);
+      background-size: cover;
+
       p {
         color: white;
         font-weight: 300;
         font-family: $font-minuscula;
         font-size: 1.8em;
         max-width: 800px;
-        span{
+        margin-left: 15%;
+
+        span {
           font-weight: 600;
         }
       }
