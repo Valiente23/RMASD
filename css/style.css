@@ -122,7 +122,7 @@ header {
       margin: 30px 0 0 0;
       transition: .3s; }
       .home__title .home__button:hover {
-        color: #4c7031; }
+        color: #ffcaa0; }
 
 #business {
   height: 150px; }
@@ -422,7 +422,7 @@ header {
     width: 900px;
     min-height: 100px;
     background-color: red;
-    border-radius: 24px 100px 24px  24px;
+    border-radius: 24px 100px 24px 24px;
     margin: 20px 0;
     display: flex;
     align-items: center; }
@@ -430,7 +430,7 @@ header {
       display: flex;
       align-items: center;
       min-height: 100px;
-      border-radius: 24px 100px 24px  24px;
+      border-radius: 24px 100px 24px 24px;
       background-color: grey;
       font-weight: 400px;
       font-size: 1.5em;
@@ -550,7 +550,7 @@ header {
       background-image: url(../imgs/img-sobre-nosotros.png);
       background-size: cover; }
       .valores .valores__container .valores__img p {
-        color: white;
+        color: #FFECE1;
         font-weight: 300;
         font-family: "Poppins", serif;
         font-size: 1.8em;
@@ -605,6 +605,90 @@ header {
     .datos .datos_text span {
       font-weight: 900;
       font-family: "Playfair Display", serif; }
+
+.clientes {
+  margin-top: 60px; }
+  .clientes .clientes_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .clientes .clientes_text .clientes_title {
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
+      color: #333333;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px; }
+    .clientes .clientes_text .clientes_subtitle {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: 300;
+      margin: 30px 0;
+      max-width: 1020px; }
+  .clientes .container-clientes {
+    display: flex;
+    justify-content: center; }
+    .clientes .container-clientes div {
+      margin: 40px;
+      text-align: center; }
+      .clientes .container-clientes div #portal {
+        width: 230px; }
+      .clientes .container-clientes div img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 50px; }
+      .clientes .container-clientes div p,
+      .clientes .container-clientes div h4 {
+        font-size: 20px;
+        margin: 10px; }
+
+.testimonios {
+  margin-top: 60px; }
+  .testimonios .testimonios_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .testimonios .testimonios_text .testimonios_title {
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
+      color: #333333;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px; }
+    .testimonios .testimonios_text .testimonios_subtitle {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: 300;
+      margin: 30px 0;
+      max-width: 1020px; }
+  .testimonios .testimonios-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; }
+    .testimonios .testimonios-container img {
+      position: relative;
+      left: 300px;
+      width: 15%; }
+    .testimonios .testimonios-container .card-testimonio {
+      background: #FFFFFF;
+      box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
+      border-radius: 100px 24px 24px 24px;
+      width: 350px;
+      height: 400px;
+      margin: 50px 60px;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .testimonios .testimonios-container .card-testimonio p {
+        padding-left: 40px;
+        padding-right: 40px; }
+      .testimonios .testimonios-container .card-testimonio .card-text {
+        font-style: italic;
+        font-weight: 300;
+        padding-top: 30px;
+        text-align: center;
+        line-height: 30px; }
 
 footer {
   margin-top: 50px; }
