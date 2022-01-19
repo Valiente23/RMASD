@@ -1,0 +1,98 @@
+.contacto {
+    margin-top: 80px;
+
+    .contacto-container {
+        background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
+        border-radius: 100px 0px 0px 24px;
+        width: 1500px;
+        height: 592px;
+        margin-left: 15%;
+        padding-left: 5%;
+
+        .contacto-title {
+            width: 28%;
+            padding-top: 70px;
+            text-align: center;
+
+            h5 {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 32px;
+                color: $color-orange;
+            }
+
+            h6 {
+                font-weight: 900;
+                font-size: 56px;
+                line-height: 64px;
+                font-family: $font-cursiva;
+            }
+        }
+
+        img {
+            position: absolute;
+            left: 400px;
+            top: 6800px;
+        }
+    }
+
+    .contacto-card {
+        width: 761px;
+        height: 681px;
+        position: absolute;
+        left: 750px;
+        top: 6500px;
+        background: $color-orange;
+        color: #FFECE1;
+        border-radius: 100px 24px 24px 0px;
+
+        p {
+            padding-left: 10%;
+            padding-right: 5%;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 20px;
+
+            &:first-of-type {
+                padding-top: 10%;
+            }
+        }
+    }
+
+    .contacto-footer {
+        margin-top: 100px;
+        text-align: center;
+
+        h5 {
+            font-family: $font-cursiva;
+            font-size: 36px;
+            line-height: 64px;
+            color: $color-blue;
+            font-style: normal;
+            font-weight: normal;
+
+            span {
+                font-family: $font-minuscula;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            &:first-of-type {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 64px;
+                margin-top: 80px;
+            }
+
+            &:last-of-type {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 64px;
+                color: $color-green;
+            }
+        }
+    }
+}

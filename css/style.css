@@ -690,6 +690,76 @@ header {
         text-align: center;
         line-height: 30px; }
 
+.contacto {
+  margin-top: 80px; }
+  .contacto .contacto-container {
+    background: linear-gradient(135deg, #FCEEE9 0%, #ECF8F8 100%);
+    border-radius: 100px 0px 0px 24px;
+    width: 1500px;
+    height: 592px;
+    margin-left: 15%;
+    padding-left: 5%; }
+    .contacto .contacto-container .contacto-title {
+      width: 28%;
+      padding-top: 70px;
+      text-align: center; }
+      .contacto .contacto-container .contacto-title h5 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #f49619; }
+      .contacto .contacto-container .contacto-title h6 {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 64px;
+        font-family: "Playfair Display", serif; }
+    .contacto .contacto-container img {
+      position: absolute;
+      left: 400px;
+      top: 6800px; }
+  .contacto .contacto-card {
+    width: 761px;
+    height: 681px;
+    position: absolute;
+    left: 750px;
+    top: 6500px;
+    background: #f49619;
+    color: #FFECE1;
+    border-radius: 100px 24px 24px 0px; }
+    .contacto .contacto-card p {
+      padding-left: 10%;
+      padding-right: 5%;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 20px; }
+      .contacto .contacto-card p:first-of-type {
+        padding-top: 10%; }
+  .contacto .contacto-footer {
+    margin-top: 100px;
+    text-align: center; }
+    .contacto .contacto-footer h5 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      line-height: 64px;
+      color: #00445d;
+      font-style: normal;
+      font-weight: normal; }
+      .contacto .contacto-footer h5 span {
+        font-family: "Poppins", serif;
+        font-weight: 600; }
+    .contacto .contacto-footer p:first-of-type {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 64px;
+      margin-top: 80px; }
+    .contacto .contacto-footer p:last-of-type {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 64px;
+      color: #4c7031; }
+
 footer {
   margin-top: 50px; }
   footer .footer_container {
