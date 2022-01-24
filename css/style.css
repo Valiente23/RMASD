@@ -201,6 +201,25 @@ header {
         padding: 0 30px 0 30px;
         line-height: 70px; } }
 
+@media only screen and (max-width: 550px) {
+  .home {
+    height: 500px; }
+    .home__bg-container {
+      width: 100%;
+      height: 500px; }
+      .home__bg-container .home__bg {
+        height: 450px;
+        min-height: 300px; }
+    .home__title {
+      height: 500px; }
+      .home__title .home__text {
+        font-size: 4em;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 30px 0 30px;
+        line-height: 70px; } }
+
 #business {
   height: 150px; }
 
@@ -847,6 +866,187 @@ header {
         margin-left: 15%; }
         .valores .valores__container .valores__img p span {
           font-weight: 600; }
+
+@media only screen and (max-width: 1250px) {
+  .valores {
+    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: max-content; }
+    .valores .valores__title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2.5em;
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+      color: #333333;
+      height: 100px;
+      margin: 35px 0; }
+      .valores .valores__title-container .valores__title {
+        font-family: "Playfair Display", serif;
+        margin: 0 10px; }
+      .valores .valores__title-container .valores__logo {
+        font-family: "Playfair Display", serif;
+        background-color: #f49619;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        color: white;
+        font-weight: 500; }
+        .valores .valores__title-container .valores__logo-text {
+          font-family: "Playfair Display", serif; }
+    .valores .valores__container {
+      width: 100%;
+      height: max-content;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 35px 0; }
+      .valores .valores__container .valores__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px; }
+        .valores .valores__container .valores__text ul {
+          display: flex;
+          flex-direction: column;
+          width: max-content; }
+          .valores .valores__container .valores__text ul li {
+            list-style: none;
+            font-weight: 700;
+            font-size: 2.5em;
+            padding: 15px;
+            display: flex;
+            width: max-content; }
+            .valores .valores__container .valores__text ul li img {
+              width: 50px;
+              margin: 0 15px 5px; }
+          .valores .valores__container .valores__text ul .simple {
+            color: #f49619; }
+          .valores .valores__container .valores__text ul .cercano {
+            color: #00445d; }
+          .valores .valores__container .valores__text ul .adaptable {
+            color: #129fd2; }
+      .valores .valores__container .valores__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1000px;
+        height: 400px;
+        background-image: url(../imgs/img-sobre-nosotros.png);
+        background-size: cover; }
+        .valores .valores__container .valores__img p {
+          color: #FFECE1;
+          font-weight: 300;
+          font-family: "Poppins", serif;
+          font-size: 1.8em;
+          max-width: 800px;
+          margin-left: 15%; }
+          .valores .valores__container .valores__img p span {
+            font-weight: 600; } }
+
+@media only screen and (max-width: 1050px) {
+  .valores {
+    flex-direction: column; }
+    .valores .valores__title-container {
+      font-size: 2em;
+      height: 60px;
+      margin: 0; }
+      .valores .valores__title-container .valores__title {
+        margin: 0 10px; }
+      .valores .valores__title-container .valores__logo {
+        width: 100px;
+        height: 100px; }
+    .valores .valores__container {
+      width: 100%;
+      height: max-content;
+      flex-direction: column;
+      margin: 35px 0; }
+      .valores .valores__container .valores__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px; }
+        .valores .valores__container .valores__text ul {
+          display: flex;
+          flex-direction: row;
+          width: max-content; }
+          .valores .valores__container .valores__text ul li {
+            font-size: 1.5em;
+            padding: 15px 10px;
+            display: flex; }
+            .valores .valores__container .valores__text ul li img {
+              width: 20px;
+              margin: 0 15px 5px; }
+      .valores .valores__container .valores__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-image: url(../imgs/img-sobre-nosotros.png);
+        background-size: cover; }
+        .valores .valores__container .valores__img p {
+          font-size: 1.5em;
+          max-width: 800px;
+          margin-left: 15%; } }
+
+@media only screen and (max-width: 555px) {
+  .valores {
+    flex-direction: column; }
+    .valores .valores__title-container {
+      font-size: 2em;
+      height: 60px;
+      margin: 0; }
+      .valores .valores__title-container .valores__title {
+        margin: 0 10px; }
+      .valores .valores__title-container .valores__logo {
+        width: 100px;
+        height: 100px; }
+    .valores .valores__container {
+      width: 100%;
+      height: max-content;
+      flex-direction: column;
+      margin: 35px 0; }
+      .valores .valores__container .valores__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .valores .valores__container .valores__text ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 100%;
+          align-items: center;
+          justify-content: center; }
+          .valores .valores__container .valores__text ul li {
+            font-size: 1.3em;
+            padding: 15px 5px;
+            display: flex; }
+            .valores .valores__container .valores__text ul li img {
+              width: 20px;
+              margin: 0 15px 0px; }
+      .valores .valores__container .valores__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-image: url(../imgs/img-sobre-nosotros.png);
+        background-size: cover; }
+        .valores .valores__container .valores__img p {
+          font-size: 1.3em;
+          max-width: 800px;
+          margin-left: 20%; } }
 
 .datos {
   margin-top: 250px;
