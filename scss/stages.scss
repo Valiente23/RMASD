@@ -122,7 +122,7 @@
         &__desc {
             max-width: 1020px;
             font-weight: 300;
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin: 40px 0;
             text-align: center;
             padding: 0 30px;
@@ -149,18 +149,19 @@
                     border-radius: 24px 100px 24px 24px;
                     background-color: grey;
                     font-weight: 400px;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     color: $color-blue;
                     padding: 0 0 0 30px;
                     width: 230px;
                 }
     
                 &-subtitle {
-                    font-size: 1.3em;
+                    font-size: 1em;
                     font-weight: 300;
                     text-align: center;
                     margin: 0 0 0 15px;
                     max-width: 560px;
+                    padding: 0 10px;
                 }
             }
     
@@ -250,7 +251,7 @@
             align-items: center;
             width: 100%;
             .stages__card {
-                width: 85%;
+                width: 90%;
                 min-height: 100px;
                 background-color: red;
                 border-radius: 24px;
@@ -304,7 +305,7 @@
                 }
     
                 .stages__card-subtitle {
-                    max-width: 65%;
+                    max-width: 60%;
                 }
             }
     

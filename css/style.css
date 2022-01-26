@@ -1157,7 +1157,7 @@ header {
     .stages__desc {
       max-width: 1020px;
       font-weight: 300;
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin: 40px 0;
       text-align: center;
       padding: 0 30px; }
@@ -1181,16 +1181,17 @@ header {
           border-radius: 24px 100px 24px 24px;
           background-color: grey;
           font-weight: 400px;
-          font-size: 1.5em;
+          font-size: 1.2em;
           color: #00445d;
           padding: 0 0 0 30px;
           width: 230px; }
         .stages__cards .stages__card-subtitle {
-          font-size: 1.3em;
+          font-size: 1em;
           font-weight: 300;
           text-align: center;
           margin: 0 0 0 15px;
-          max-width: 560px; }
+          max-width: 560px;
+          padding: 0 10px; }
       .stages__cards .stages__card-cream {
         background-color: #ffe0c5; }
         .stages__cards .stages__card-cream .stages__card-title {
@@ -1247,7 +1248,7 @@ header {
       align-items: center;
       width: 100%; }
       .stages__cards .stages__card {
-        width: 85%;
+        width: 90%;
         min-height: 100px;
         background-color: red;
         border-radius: 24px;
@@ -1286,7 +1287,7 @@ header {
           width: 230px;
           background-color: #f49619; }
         .stages__cards .stages__card-orange .stages__card-subtitle {
-          max-width: 65%; }
+          max-width: 60%; }
       .stages__cards .stages__card-green {
         background-color: #618C40; }
         .stages__cards .stages__card-green .stages__card-title {
@@ -1578,46 +1579,175 @@ header {
   background-image: url(../imgs/img-datos.JPG);
   background-size: cover;
   display: flex;
-  justify-content: space-between; }
-  .datos .datos_card {
-    background-color: #00445d;
-    color: white;
-    border-radius: 100px 24px 24px 24px;
-    position: absolute;
-    width: 573.15px;
-    height: 424px;
-    left: 138px;
-    top: 4200px;
-    letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .datos .datos__card-container {
     display: flex;
-    flex-direction: column; }
-    .datos .datos_card h3 {
-      color: #f49619;
+    width: 50%;
+    justify-content: center; }
+    .datos .datos__card-container .datos_card {
+      background-color: #00445d;
+      color: white;
+      border-radius: 100px 24px 24px 24px;
+      width: 573.15px;
+      height: 424px;
+      position: relative;
+      top: -80px;
       letter-spacing: 1px;
-      font-size: 30px;
-      position: relative;
-      text-align: center;
-      top: 20px; }
-    .datos .datos_card ul {
-      margin-top: 40px;
-      position: relative;
-      left: 50px;
-      color: #FFECE1; }
-      .datos .datos_card ul li {
-        margin-top: 20px; }
-  .datos .datos_text {
-    color: #00445d;
-    font-size: 50px;
-    font-style: italic;
-    font-family: "Playfair Display", serif;
-    position: absolute;
-    width: 584px;
-    height: 200px;
-    left: 900px;
-    top: 4450px; }
-    .datos .datos_text span {
-      font-weight: 900;
-      font-family: "Playfair Display", serif; }
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .datos .datos__card-container .datos_card h3 {
+        color: #f49619;
+        letter-spacing: 1px;
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+        top: 20px; }
+      .datos .datos__card-container .datos_card ul {
+        margin-top: 20px;
+        position: relative;
+        left: 50px;
+        color: #FFECE1; }
+        .datos .datos__card-container .datos_card ul li {
+          margin-top: 20px; }
+  .datos .datos_text-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .datos .datos_text-container .datos_text {
+      color: #00445d;
+      font-size: 50px;
+      font-style: italic;
+      font-family: "Playfair Display", serif;
+      width: 584px;
+      height: 200px; }
+      .datos .datos_text-container .datos_text span {
+        font-weight: 900;
+        font-family: "Playfair Display", serif; }
+
+@media only screen and (max-width: 1250px) {
+  .datos {
+    margin-top: 80px;
+    height: max-content;
+    background-image: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; }
+    .datos .datos__card-container {
+      display: flex;
+      width: 50%;
+      min-width: 530px;
+      justify-content: center; }
+      .datos .datos__card-container .datos_card {
+        background-color: #00445d;
+        color: white;
+        border-radius: 100px 0px 0px 0px;
+        width: 100%;
+        height: max-content;
+        position: relative;
+        top: 0px;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .datos .datos__card-container .datos_card h3 {
+          color: #f49619;
+          letter-spacing: 1px;
+          font-size: 30px;
+          position: relative;
+          text-align: center;
+          top: 20px; }
+        .datos .datos__card-container .datos_card ul {
+          margin: 20px 0;
+          position: relative;
+          left: 25px;
+          color: #FFECE1; }
+          .datos .datos__card-container .datos_card ul li {
+            margin-top: 20px; }
+    .datos .datos_text-container {
+      width: 50%;
+      min-width: 530px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../imgs/img-datos.JPG);
+      border-radius: 0px 0px 100px 0px; }
+      .datos .datos_text-container .datos_text {
+        color: #00445d;
+        font-size: 2em;
+        font-style: italic;
+        font-family: "Playfair Display", serif;
+        width: 100%;
+        height: 100%;
+        padding: 50px; }
+        .datos .datos_text-container .datos_text span {
+          font-weight: 900;
+          font-family: "Playfair Display", serif; } }
+
+@media only screen and (max-width: 555px) {
+  .datos {
+    margin-top: 80px;
+    height: max-content;
+    background-image: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; }
+    .datos .datos__card-container {
+      display: flex;
+      width: 80%;
+      min-width: 380px;
+      justify-content: center; }
+      .datos .datos__card-container .datos_card {
+        background-color: #00445d;
+        color: white;
+        border-radius: 100px 0px 0px 0px;
+        width: 100%;
+        height: max-content;
+        position: block;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .datos .datos__card-container .datos_card h3 {
+          color: #f49619;
+          letter-spacing: 1px;
+          font-size: 1.3em;
+          position: relative;
+          text-align: center;
+          top: 35px; }
+        .datos .datos__card-container .datos_card ul {
+          margin: 30px 0;
+          position: block;
+          color: #FFECE1;
+          padding: 0 15px;
+          font-weight: 400; }
+          .datos .datos__card-container .datos_card ul li {
+            margin-top: 10px;
+            width: 100%; }
+    .datos .datos_text-container {
+      width: 80%;
+      min-width: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../imgs/img-datos.JPG);
+      border-radius: 0px 0px 100px 0px; }
+      .datos .datos_text-container .datos_text {
+        color: #00445d;
+        font-size: 1.3em;
+        font-style: italic;
+        font-family: "Playfair Display", serif;
+        width: 100%;
+        height: 100%;
+        padding: 40px; }
+        .datos .datos_text-container .datos_text span {
+          font-weight: 900;
+          font-family: "Playfair Display", serif; } }
 
 .clientes {
   margin-top: 60px; }
