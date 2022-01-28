@@ -7,6 +7,16 @@
   * a {
     color: inherit; }
 
+body {
+  font-family: "Montserrat", sans-serif; }
+  body::-webkit-scrollbar {
+    width: 14px;
+    background: #ffffff; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border: 2px solid #ffffff;
+    border-radius: 7px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -1750,7 +1760,10 @@ header {
           font-family: "Playfair Display", serif; } }
 
 .clientes {
-  margin-top: 60px; }
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .clientes .clientes_text {
     display: flex;
     flex-direction: column;
@@ -1768,22 +1781,168 @@ header {
       font-weight: 300;
       margin: 30px 0;
       max-width: 1020px; }
-  .clientes .container-clientes {
+  .clientes .clientes__carrusel {
+    width: 900px;
+    height: max-content; }
+    .clientes .clientes__carrusel .container-clientes {
+      display: flex;
+      overflow: scroll;
+      scroll-snap-type: both mandatory;
+      scroll-padding: 1rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      overflow-y: hidden;
+      border-radius: 80px;
+      cursor: grab; }
+      .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background: #f5f5f5;
+        border-radius: 7px; }
+      .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar-thumb {
+        background-color: #c9c9c9;
+        border: 2px solid #f5f5f5;
+        border-radius: 7px; }
+      .clientes .clientes__carrusel .container-clientes:active {
+        cursor: grabbing; }
+      .clientes .clientes__carrusel .container-clientes .clientes__card {
+        margin: 30px;
+        text-align: center; }
+        .clientes .clientes__carrusel .container-clientes .clientes__card img {
+          height: 280px;
+          object-fit: cover;
+          margin-bottom: 20px;
+          pointer-events: none; }
+        .clientes .clientes__carrusel .container-clientes .clientes__card p,
+        .clientes .clientes__carrusel .container-clientes .clientes__card h4 {
+          font-size: 20px;
+          margin: 5px; }
+
+@media only screen and (max-width: 1050px) {
+  .clientes {
+    margin-top: 60px;
     display: flex;
-    justify-content: center; }
-    .clientes .container-clientes div {
-      margin: 40px;
-      text-align: center; }
-      .clientes .container-clientes div #portal {
-        width: 230px; }
-      .clientes .container-clientes div img {
-        width: 280px;
-        height: 280px;
-        margin-bottom: 50px; }
-      .clientes .container-clientes div p,
-      .clientes .container-clientes div h4 {
-        font-size: 20px;
-        margin: 10px; }
+    flex-direction: column;
+    align-items: center; }
+    .clientes .clientes_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .clientes .clientes_text .clientes_title {
+        font-size: 2em;
+        font-family: "Playfair Display", serif;
+        color: #333333;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 50px; }
+      .clientes .clientes_text .clientes_subtitle {
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: 300;
+        margin: 30px 0;
+        max-width: 1020px; }
+    .clientes .clientes__carrusel {
+      width: 80%;
+      height: max-content; }
+      .clientes .clientes__carrusel .container-clientes {
+        display: flex;
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+        scroll-padding: 1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        overflow-y: hidden;
+        border-radius: 80px;
+        cursor: grab; }
+        .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+          background: #f5f5f5;
+          border-radius: 7px; }
+        .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar-thumb {
+          background-color: #c9c9c9;
+          border: 2px solid #f5f5f5;
+          border-radius: 7px; }
+        .clientes .clientes__carrusel .container-clientes:active {
+          cursor: grabbing; }
+        .clientes .clientes__carrusel .container-clientes .clientes__card {
+          margin: 30px;
+          text-align: center; }
+          .clientes .clientes__carrusel .container-clientes .clientes__card img {
+            height: 230px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            pointer-events: none; }
+          .clientes .clientes__carrusel .container-clientes .clientes__card p,
+          .clientes .clientes__carrusel .container-clientes .clientes__card h4 {
+            font-size: 1em;
+            margin: 5px; } }
+
+@media only screen and (max-width: 1050px) {
+  .clientes {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .clientes .clientes_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .clientes .clientes_text .clientes_title {
+        font-size: 2em;
+        font-family: "Playfair Display", serif;
+        color: #333333;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 50px; }
+      .clientes .clientes_text .clientes_subtitle {
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: 300;
+        margin: 30px 0;
+        max-width: 1020px; }
+    .clientes .clientes__carrusel {
+      width: 90%;
+      height: max-content; }
+      .clientes .clientes__carrusel .container-clientes {
+        display: flex;
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+        scroll-padding: 1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        overflow-y: hidden;
+        border-radius: 80px;
+        cursor: grab; }
+        .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+          background: #f5f5f5;
+          border-radius: 7px; }
+        .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar-thumb {
+          background-color: #c9c9c9;
+          border: 2px solid #f5f5f5;
+          border-radius: 7px; }
+        .clientes .clientes__carrusel .container-clientes:active {
+          cursor: grabbing; }
+        .clientes .clientes__carrusel .container-clientes .clientes__card {
+          margin: 20px;
+          text-align: center; }
+          .clientes .clientes__carrusel .container-clientes .clientes__card img {
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            pointer-events: none; }
+          .clientes .clientes__carrusel .container-clientes .clientes__card p,
+          .clientes .clientes__carrusel .container-clientes .clientes__card h4 {
+            font-size: 1em;
+            margin: 0px; } }
 
 .testimonios {
   margin-top: 60px; }

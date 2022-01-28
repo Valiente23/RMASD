@@ -1,54 +1,229 @@
 .clientes {
-    margin-top: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .clientes_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .clientes_text {
+    .clientes_title {
+      font-size: 3em;
+      font-family: $font-cursiva;
+      color: $color-black;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .clientes_subtitle {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: 300;
+      margin: 30px 0;
+      max-width: 1020px;
+    }
+  }
+  .clientes__carrusel {
+    width: 900px;
+    height: max-content;
+    .container-clientes {
+      display: flex;
+      overflow: scroll;
+      scroll-snap-type: both mandatory;
+      scroll-padding: 1rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      overflow-y: hidden;
+      border-radius: 80px;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background: #f5f5f5;
+        border-radius: 7px; 
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: #c9c9c9;
+        border: 2px solid #f5f5f5;
+        border-radius: 7px; 
+      }
+      cursor: grab;
+      &:active {
+        cursor: grabbing;
+      }
+      .clientes__card {
+        margin: 30px;
+        text-align: center;
+        // display: inline-block;
+        img {
+          height: 280px;
+          object-fit: cover;
+          margin-bottom: 20px;
+          pointer-events: none;
+        }
+        p,
+        h4 {
+          font-size: 20px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+    .clientes {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .clientes_title {
-            font-size: 3em;
+        .clientes_text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          .clientes_title {
+            font-size: 2em;
             font-family: $font-cursiva;
             color: $color-black;
             font-weight: 800;
             text-align: center;
             margin-top: 50px;
-        }
-
-        .clientes_subtitle {
-            font-size: 1.5em;
+          }
+      
+          .clientes_subtitle {
+            font-size: 1.2em;
             text-align: center;
             font-weight: 300;
             margin: 30px 0;
             max-width: 1020px;
+          }
         }
-    }
-
-    .container-clientes {
+        .clientes__carrusel {
+          width: 80%;
+          height: max-content;
+          .container-clientes {
+            display: flex;
+            overflow: scroll;
+            scroll-snap-type: both mandatory;
+            scroll-padding: 1rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            overflow-y: hidden;
+            border-radius: 80px;
+            &::-webkit-scrollbar {
+              width: 10px;
+              height: 10px;
+              background: #f5f5f5;
+              border-radius: 7px; 
+            }
+            &::-webkit-scrollbar-thumb{
+              background-color: #c9c9c9;
+              border: 2px solid #f5f5f5;
+              border-radius: 7px; 
+            }
+            cursor: grab;
+            &:active {
+              cursor: grabbing;
+            }
+            .clientes__card {
+              margin: 30px;
+              text-align: center;
+              // display: inline-block;
+              img {
+                height: 230px;
+                object-fit: cover;
+                margin-bottom: 20px;
+                pointer-events: none;
+              }
+              p,
+              h4 {
+                font-size: 1em;
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+}
+@media only screen and (max-width: 1050px) {
+    .clientes {
+        margin-top: 60px;
         display: flex;
-        justify-content: center;
-
-
-
-        div {
-            margin: 40px;
+        flex-direction: column;
+        align-items: center;
+        .clientes_text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          .clientes_title {
+            font-size: 2em;
+            font-family: $font-cursiva;
+            color: $color-black;
+            font-weight: 800;
             text-align: center;
-
-            #portal {
-                width: 230px;
-            }
-
-            img {
-                width: 280px;
-                height: 280px;
-                margin-bottom: 50px;
-            }
-
-            p,
-            h4 {
-                font-size: 20px;
-                margin: 10px;
-            }
+            margin-top: 50px;
+          }
+      
+          .clientes_subtitle {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 300;
+            margin: 30px 0;
+            max-width: 1020px;
+          }
         }
-    }
+        .clientes__carrusel {
+          width: 90%;
+          height: max-content;
+          .container-clientes {
+            display: flex;
+            overflow: scroll;
+            scroll-snap-type: both mandatory;
+            scroll-padding: 1rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            overflow-y: hidden;
+            border-radius: 80px;
+            &::-webkit-scrollbar {
+              width: 10px;
+              height: 10px;
+              background: #f5f5f5;
+              border-radius: 7px; 
+            }
+            &::-webkit-scrollbar-thumb{
+              background-color: #c9c9c9;
+              border: 2px solid #f5f5f5;
+              border-radius: 7px; 
+            }
+            cursor: grab;
+            &:active {
+              cursor: grabbing;
+            }
+            .clientes__card {
+              margin: 20px;
+              text-align: center;
+              // display: inline-block;
+              img {
+                height: 150px;
+                object-fit: cover;
+                margin-bottom: 20px;
+                pointer-events: none;
+              }
+              p,
+              h4 {
+                font-size: 1em;
+                margin: 0px;
+              }
+            }
+          }
+        }
+      }
 }

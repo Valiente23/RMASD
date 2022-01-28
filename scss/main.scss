@@ -22,7 +22,18 @@ $font-cursiva: "Playfair Display", serif;
     color: inherit;
   }
 }
-
+body {
+  font-family: "Montserrat", sans-serif;
+  &::-webkit-scrollbar {
+    width: 14px;
+    background: #ffffff;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #c9c9c9;
+    border: 2px solid #ffffff;
+    border-radius: 7px; 
+  }
+}
 html {
   scroll-behavior: smooth;
 }
