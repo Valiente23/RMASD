@@ -7,6 +7,9 @@
   * a {
     color: inherit; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -635,7 +638,8 @@ header {
       text-align: center;
       font-weight: 300;
       margin: 70px 0;
-      max-width: 1020px; }
+      max-width: 1020px;
+      padding: 30px; }
       .services__text .services__subtitle span {
         font-weight: 500; }
   .services__cards {
@@ -1131,14 +1135,14 @@ header {
     .stages__cards .stages__card-cream .stages__card-subtitle {
       max-width: 560px; }
   .stages__cards .stages__card-orange {
-    background-color: #ECB976; }
+    background-color: #ecb976; }
     .stages__cards .stages__card-orange .stages__card-title {
       width: 290px;
       background-color: #f49619; }
     .stages__cards .stages__card-orange .stages__card-subtitle {
       max-width: 360px; }
   .stages__cards .stages__card-green {
-    background-color: #618C40; }
+    background-color: #618c40; }
     .stages__cards .stages__card-green .stages__card-title {
       width: 350px;
       background-color: #4c7031;
@@ -1147,7 +1151,7 @@ header {
       max-width: 360px;
       color: #ffece1; }
   .stages__cards .stages__card-blue {
-    background-color: #056E95; }
+    background-color: #056e95; }
     .stages__cards .stages__card-blue .stages__card-title {
       width: 410px;
       background-color: #00445d;
@@ -1212,14 +1216,14 @@ header {
         .stages__cards .stages__card-cream .stages__card-subtitle {
           max-width: 65%; }
       .stages__cards .stages__card-orange {
-        background-color: #ECB976; }
+        background-color: #ecb976; }
         .stages__cards .stages__card-orange .stages__card-title {
           width: 230px;
           background-color: #f49619; }
         .stages__cards .stages__card-orange .stages__card-subtitle {
           max-width: 65%; }
       .stages__cards .stages__card-green {
-        background-color: #618C40; }
+        background-color: #618c40; }
         .stages__cards .stages__card-green .stages__card-title {
           width: 230px;
           background-color: #4c7031;
@@ -1228,7 +1232,7 @@ header {
           max-width: 65%;
           color: #ffece1; }
       .stages__cards .stages__card-blue {
-        background-color: #056E95; }
+        background-color: #056e95; }
         .stages__cards .stages__card-blue .stages__card-title {
           width: 230px;
           background-color: #00445d;
@@ -1294,14 +1298,14 @@ header {
         .stages__cards .stages__card-cream .stages__card-subtitle {
           max-width: 65%; }
       .stages__cards .stages__card-orange {
-        background-color: #ECB976; }
+        background-color: #ecb976; }
         .stages__cards .stages__card-orange .stages__card-title {
           width: 230px;
           background-color: #f49619; }
         .stages__cards .stages__card-orange .stages__card-subtitle {
           max-width: 60%; }
       .stages__cards .stages__card-green {
-        background-color: #618C40; }
+        background-color: #618c40; }
         .stages__cards .stages__card-green .stages__card-title {
           width: 230px;
           background-color: #4c7031;
@@ -1310,7 +1314,7 @@ header {
           max-width: 65%;
           color: #ffece1; }
       .stages__cards .stages__card-blue {
-        background-color: #056E95; }
+        background-color: #056e95; }
         .stages__cards .stages__card-blue .stages__card-title {
           width: 230px;
           background-color: #00445d;

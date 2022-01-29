@@ -1,11 +1,11 @@
 $color-black: #333333;
 $color-blue: #00445d;
 $color-blue-light: #129fd2;
-$color-blue-light2: #056E95;
+$color-blue-light2: #056e95;
 $color-green: #4c7031;
-$color-green-light: #618C40;
+$color-green-light: #618c40;
 $color-orange: #f49619;
-$color-orange-ligth: #ECB976;
+$color-orange-ligth: #ecb976;
 $color-orange-ligth2: #ffcaa0;
 $color-cream-dark: #ffe0c5;
 $color-cream: #ffece1;
@@ -22,16 +22,19 @@ $font-cursiva: "Playfair Display", serif;
     color: inherit;
   }
 }
+html {
+  overflow-x:hidden;
+}
 body {
   font-family: "Montserrat", sans-serif;
   &::-webkit-scrollbar {
     width: 14px;
     background: #ffffff;
   }
-  &::-webkit-scrollbar-thumb{
+  &::-webkit-scrollbar-thumb {
     background-color: #c9c9c9;
     border: 2px solid #ffffff;
-    border-radius: 7px; 
+    border-radius: 7px;
   }
   width: 100%;
   overflow-x: hidden;
