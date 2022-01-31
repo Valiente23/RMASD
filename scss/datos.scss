@@ -148,10 +148,11 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        padding: 0 20px;
         .datos__card-container{
             display: flex;
-            width: 80%;
-            min-width: 380px;
+            width: 100%;
+            min-width: inherit;
             justify-content: center;
             .datos_card {
                 background-color: $color-blue;
@@ -159,7 +160,7 @@
                 border-radius: 100px 0px 0px 0px;
                 width: 100%;
                 height: max-content;
-                position: block;
+                position: unset;
                 letter-spacing: 1px;
                 display: flex;
                 align-items: center;
@@ -168,7 +169,7 @@
                 h3 {
                     color: $color-orange;
                     letter-spacing: 1px;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     position: relative;
                     text-align: center;
                     top: 35px;
@@ -176,11 +177,13 @@
         
                 ul {
                     margin: 30px 0;
-                    position: block;
                     color: #FFECE1;
-                    padding: 0 15px;
+                    width: 100%;
+                    padding: 0 10px 0 40px;
                     font-weight: 400;
+                    position: unset;
                     li {
+                        font-size: .8em;
                         margin-top: 10px;
                         width: 100%;
                     }
@@ -188,8 +191,8 @@
             }
         }
         .datos_text-container{
-            width: 80%;
-            min-width: 380px;
+            width: 100%;
+            min-width: inherit;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -540,12 +540,13 @@
     &__text {
       .services__title {
         font-size: 2em;
-        margin-top: 30px;
+        margin-top: 0px;
       }
   
       .services__subtitle {
         font-size: 1.2em;
         padding: 0 30px;
+        margin: 50px 0;
       }
     }
   
@@ -577,9 +578,9 @@
   
           .services__img {
             position: absolute;
-            top: -75px;
-            width: 135px;
-            height: 135px;
+            top: -55px;
+            width: 115px;
+            height: 115px;
             border-radius: 50%;
             background-color: $color-blue;
             display: flex;
@@ -634,7 +635,7 @@
   
           .services__img {
             background-color: white;
-            top: -45px;
+            top: -30px;
   
             img {
               width: 30%;

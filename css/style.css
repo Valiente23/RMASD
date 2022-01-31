@@ -996,10 +996,11 @@ header {
 @media only screen and (max-width: 555px) {
   .services__text .services__title {
     font-size: 2em;
-    margin-top: 30px; }
+    margin-top: 0px; }
   .services__text .services__subtitle {
     font-size: 1.2em;
-    padding: 0 30px; }
+    padding: 0 30px;
+    margin: 50px 0; }
   .services__cards {
     width: 100%;
     display: flex;
@@ -1026,9 +1027,9 @@ header {
         box-shadow: 0px -24px 48px rgba(0, 24, 52, 0.2); }
         .services__cards-container .services__card .services__img {
           position: absolute;
-          top: -75px;
-          width: 135px;
-          height: 135px;
+          top: -55px;
+          width: 115px;
+          height: 115px;
           border-radius: 50%;
           background-color: #00445d;
           display: flex;
@@ -1069,7 +1070,7 @@ header {
         z-index: 100; }
         .services__cards-container .services__card-blue .services__img {
           background-color: white;
-          top: -45px; }
+          top: -30px; }
           .services__cards-container .services__card-blue .services__img img {
             width: 30%; }
         .services__cards-container .services__card-blue .services__title {
@@ -1556,7 +1557,7 @@ header {
       width: 100%;
       height: max-content;
       flex-direction: column;
-      margin: 35px 0; }
+      margin: 35px 0 0 0; }
       .valores .valores__container .valores__text {
         display: flex;
         justify-content: center;
@@ -1712,11 +1713,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    padding: 0 20px; }
     .datos .datos__card-container {
       display: flex;
-      width: 80%;
-      min-width: 380px;
+      width: 100%;
+      min-width: inherit;
       justify-content: center; }
       .datos .datos__card-container .datos_card {
         background-color: #00445d;
@@ -1724,7 +1726,7 @@ header {
         border-radius: 100px 0px 0px 0px;
         width: 100%;
         height: max-content;
-        position: block;
+        position: unset;
         letter-spacing: 1px;
         display: flex;
         align-items: center;
@@ -1732,22 +1734,24 @@ header {
         .datos .datos__card-container .datos_card h3 {
           color: #f49619;
           letter-spacing: 1px;
-          font-size: 1.3em;
+          font-size: 1.2em;
           position: relative;
           text-align: center;
           top: 35px; }
         .datos .datos__card-container .datos_card ul {
           margin: 30px 0;
-          position: block;
           color: #FFECE1;
-          padding: 0 15px;
-          font-weight: 400; }
+          width: 100%;
+          padding: 0 10px 0 40px;
+          font-weight: 400;
+          position: unset; }
           .datos .datos__card-container .datos_card ul li {
+            font-size: .8em;
             margin-top: 10px;
             width: 100%; }
     .datos .datos_text-container {
-      width: 80%;
-      min-width: 380px;
+      width: 100%;
+      min-width: inherit;
       display: flex;
       justify-content: center;
       align-items: center;
