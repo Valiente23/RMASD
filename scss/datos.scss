@@ -7,14 +7,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    .datos__card-container{
+
+    .datos__card-container {
         display: flex;
         width: 50%;
         justify-content: center;
+
         .datos_card {
-            background-color: $color-blue;
+            background: rgb(11, 84, 110);
             color: white;
-            border-radius: 100px 24px 24px 24px;
+            border-radius: 150px 24px 24px 24px;
             width: 573.15px;
             height: 424px;
             position: relative;
@@ -23,7 +25,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-    
+
             h3 {
                 color: $color-orange;
                 letter-spacing: 1px;
@@ -32,24 +34,27 @@
                 text-align: center;
                 top: 20px;
             }
-    
+
             ul {
                 margin-top: 20px;
                 position: relative;
                 left: 50px;
                 color: #FFECE1;
-    
+
                 li {
                     margin-top: 20px;
+                    font-weight: 300;
                 }
             }
         }
     }
-    .datos_text-container{
+
+    .datos_text-container {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         .datos_text {
             color: $color-blue;
             font-size: 50px;
@@ -57,161 +62,13 @@
             font-family: $font-cursiva;
             width: 584px;
             height: 200px;
-    
+
             span {
                 font-weight: 900;
                 font-family: $font-cursiva;
             }
         }
     }
-    
+
 }
-@media only screen and (max-width: 1250px) {
-    .datos {
-        margin-top: 80px;
-        height: max-content;
-        background-image: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        .datos__card-container{
-            display: flex;
-            width: 50%;
-            min-width: 530px;
-            justify-content: center;
-            .datos_card {
-                background-color: $color-blue;
-                color: white;
-                border-radius: 100px 0px 0px 0px;
-                width: 100%;
-                height: max-content;
-                position: relative;
-                top: 0px;
-                letter-spacing: 1px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-        
-                h3 {
-                    color: $color-orange;
-                    letter-spacing: 1px;
-                    font-size: 30px;
-                    position: relative;
-                    text-align: center;
-                    top: 20px;
-                }
-        
-                ul {
-                    margin: 20px 0;
-                    position: relative;
-                    left: 25px;
-                    color: #FFECE1;
-        
-                    li {
-                        margin-top: 20px;
-                    }
-                }
-            }
-        }
-        .datos_text-container{
-            width: 50%;
-            min-width: 530px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../imgs/img-datos.JPG);
-            border-radius: 0px 0px 100px 0px;
-            .datos_text {
-                color: $color-blue;
-                font-size: 2em;
-                font-style: italic;
-                font-family: $font-cursiva;
-                width: 100%;
-                height: 100%;
-                padding: 50px;
-        
-                span {
-                    font-weight: 900;
-                    font-family: $font-cursiva;
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 555px) {
-    .datos {
-        margin-top: 80px;
-        height: max-content;
-        background-image: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 20px;
-        .datos__card-container{
-            display: flex;
-            width: 100%;
-            min-width: inherit;
-            justify-content: center;
-            .datos_card {
-                background-color: $color-blue;
-                color: white;
-                border-radius: 100px 0px 0px 0px;
-                width: 100%;
-                height: max-content;
-                position: unset;
-                letter-spacing: 1px;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-        
-                h3 {
-                    color: $color-orange;
-                    letter-spacing: 1px;
-                    font-size: 1.2em;
-                    position: relative;
-                    text-align: center;
-                    top: 35px;
-                }
-        
-                ul {
-                    margin: 30px 0;
-                    color: #FFECE1;
-                    width: 100%;
-                    padding: 0 10px 0 40px;
-                    font-weight: 400;
-                    position: unset;
-                    li {
-                        font-size: .8em;
-                        margin-top: 10px;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .datos_text-container{
-            width: 100%;
-            min-width: inherit;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../imgs/img-datos.JPG);
-            border-radius: 0px 0px 100px 0px;
-            .datos_text {
-                color: $color-blue;
-                font-size: 1.3em;
-                font-style: italic;
-                font-family: $font-cursiva;
-                width: 100%;
-                height: 100%;
-                padding: 40px;
-        
-                span {
-                    font-weight: 900;
-                    font-family: $font-cursiva;
-                }
-            }
-        }
-    }
-}
+

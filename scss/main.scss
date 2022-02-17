@@ -9,8 +9,10 @@ $color-orange-ligth: #ecb976;
 $color-orange-ligth2: #ffcaa0;
 $color-cream-dark: #ffe0c5;
 $color-cream: #ffece1;
-$font-minuscula: "Poppins", serif;
-$font-cursiva: "Playfair Display", serif;
+$font-minuscula: "Poppins",
+serif;
+$font-cursiva: "Playfair Display",
+serif;
 
 * {
   margin: 0;
@@ -18,27 +20,34 @@ $font-cursiva: "Playfair Display", serif;
   box-sizing: border-box;
   font-family: $font-minuscula;
   text-decoration: none;
+
   a {
     color: inherit;
   }
 }
+
 html {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
+
   &::-webkit-scrollbar {
     width: 14px;
     background: #ffffff;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: #c9c9c9;
     border: 2px solid #ffffff;
     border-radius: 7px;
   }
+
   width: 100%;
   overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -50,7 +59,6 @@ section {
 @import "header.scss";
 @import "home.scss";
 @import "business.scss";
-@import "digital.scss";
 @import "services.scss";
 @import "stages.scss";
 @import "valores.scss";
@@ -59,3 +67,7 @@ section {
 @import "testimonios.scss";
 @import "contacto.scss";
 @import "footer.scss";
+@import "desktop.scss";
+@import "laptop.scss";
+@import "tablet.scss";
+@import "mobile.scss";

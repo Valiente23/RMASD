@@ -24,7 +24,7 @@
             width: 900px;
             min-height: 100px;
             background-color: red;
-            border-radius: 24px 100px 24px 24px;
+            border-radius: 24px 180px 24px 24px;
             margin: 20px 0;
             display: flex;
             align-items: center;
@@ -33,7 +33,7 @@
                 display: flex;
                 align-items: center;
                 min-height: 100px;
-                border-radius: 24px 100px 24px 24px;
+                border-radius: 24px 150px 24px 24px;
                 background-color: grey;
                 font-weight: 400px;
                 font-size: 1.5em;
@@ -55,10 +55,12 @@
             .stages__card-title {
                 width: 230px;
                 background-color: $color-orange-ligth2;
+                color: $color-blue;
             }
 
             .stages__card-subtitle {
                 max-width: 560px;
+                color: $color-blue;
             }
         }
 
@@ -68,10 +70,12 @@
             .stages__card-title {
                 width: 290px;
                 background-color: $color-orange;
+                color: $color-blue;
             }
 
             .stages__card-subtitle {
                 max-width: 360px;
+                color: $color-blue;
             }
         }
 
@@ -105,239 +109,25 @@
             }
         }
     }
-}
-@media only screen and (max-width: 1050px) {
-    .stages {
+
+    .stages__button {
+        cursor: pointer;
+        background-color: $color-orange;
+        color: $color-cream;
+        width: 170px;
+        height: 48px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-    
-        &__title {
-            width: max-content;
-            text-align: center;
-            font-family: $font-cursiva;
-            font-size: 2em;
-        }
-    
-        &__desc {
-            max-width: 1020px;
-            font-weight: 300;
-            font-size: 1.2em;
-            margin: 40px 0;
-            text-align: center;
-            padding: 0 30px;
-        }
-    
-        &__cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            .stages__card {
-                width: 85%;
-                min-height: 100px;
-                background-color: red;
-                border-radius: 24px 100px 24px 24px;
-                margin: 10px 0;
-                display: flex;
-                align-items: center;
-    
-                &-title {
-                    display: flex;
-                    align-items: center;
-                    min-height: 100px;
-                    border-radius: 24px 100px 24px 24px;
-                    background-color: grey;
-                    font-weight: 400px;
-                    font-size: 1.2em;
-                    color: $color-blue;
-                    padding: 0 0 0 30px;
-                    width: 230px;
-                }
-    
-                &-subtitle {
-                    font-size: 1em;
-                    font-weight: 300;
-                    text-align: center;
-                    margin: 0 0 0 15px;
-                    max-width: 560px;
-                    padding: 0 10px;
-                }
-            }
-    
-            .stages__card-cream {
-                background-color: $color-cream-dark;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-orange-ligth2;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                }
-            }
-    
-            .stages__card-orange {
-                background-color: $color-orange-ligth;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-orange;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                }
-            }
-    
-            .stages__card-green {
-                background-color: $color-green-light;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-green;
-                    color: $color-cream;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                    color: $color-cream;
-                }
-            }
-    
-            .stages__card-blue {
-                background-color: $color-blue-light2;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-blue;
-                    color: $color-cream;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                    color: $color-cream;
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 555px) {
-    .stages {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        &__title {
-            width: max-content;
-            text-align: center;
-            font-family: $font-cursiva;
-            font-size: 2em;
-        }
-    
-        &__desc {
-            max-width: 1020px;
-            font-weight: 300;
-            font-size: 1.2em;
-            margin: 40px 0;
-            text-align: center;
-            padding: 0 30px;
-        }
-    
-        &__cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            .stages__card {
-                width: 90%;
-                min-height: 100px;
-                background-color: red;
-                border-radius: 24px;
-                margin: 10px 0;
-                display: flex;
-                align-items: center;
-    
-                &-title {
-                    display: flex;
-                    align-items: center;
-                    min-height: inherit;
-                    border-radius: 24px 100px 24px 24px;
-                    background-color: grey;
-                    font-weight: 400px;
-                    font-size: 1em;
-                    color: $color-blue;
-                    padding: 0 0 0 15px;
-                    width: 230px;
-                    height: 100%;
-                }
-    
-                &-subtitle {
-                    font-size: 1em;
-                    font-weight: 300;
-                    text-align: center;
-                    margin: 0px;
-                    max-width: 560px;
-                }
-            }
-    
-            .stages__card-cream {
-                background-color: $color-cream-dark;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-orange-ligth2;
-                    height: 100%;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                }
-            }
-    
-            .stages__card-orange {
-                background-color: $color-orange-ligth;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-orange;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 60%;
-                }
-            }
-    
-            .stages__card-green {
-                background-color: $color-green-light;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-green;
-                    color: $color-cream;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                    color: $color-cream;
-                }
-            }
-    
-            .stages__card-blue {
-                background-color: $color-blue-light2;
-    
-                .stages__card-title {
-                    width: 230px;
-                    background-color: $color-blue;
-                    color: $color-cream;
-                }
-    
-                .stages__card-subtitle {
-                    max-width: 65%;
-                    color: $color-cream;
-                }
-            }
-        }
+        font-size: 1em;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 30px 0 0 0;
+        transition: .3s;
+        border: none;
+        &:hover {
+            color: $color-orange-ligth2;
+          }
     }
 }

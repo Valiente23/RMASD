@@ -1,0 +1,861 @@
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+    html {
+        font-size: 85%;
+    }
+
+    header {
+        nav {
+            ul {
+                li {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .home {
+        height: 1000px;
+
+        .home__bg-container {
+            .home__bg {
+                height: 900px;
+            }
+        }
+
+        .home__title {
+            height: 1250px;
+
+            .home__button {
+                width: 200px;
+                height: 50px;
+                font-size: 1.3rem;
+                margin: 60px 0 0 0;
+            }
+        }
+    }
+
+    .business {
+        height: 600px;
+        font-size: 95%;
+        margin-bottom: 80px;
+
+        .business__text {
+            .business__title {
+                max-width: 720px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .business__subtitle {
+            font-size: 1.8em;
+        }
+
+        .business__cards {
+            margin: 70px 0 100px;
+
+            .business__cards-container {
+                .business__card {
+                    width: 270px;
+                    height: 240px;
+
+                    .business__img {
+                        position: absolute;
+                        top: -80px;
+                        width: 182px;
+                        height: 182px;
+                        border-radius: 50%;
+                    }
+
+                    .business__title {
+                        font-weight: 1000;
+                        font-size: 1.7em;
+                    }
+                }
+
+                .business__card-tech {
+                    top: 40px;
+                    height: 250px;
+
+                    .business__img {
+                        top: -80px;
+                    }
+                }
+
+                .business__card-business {
+                    border-radius: 24px 120px 24px 24px;
+                }
+
+                .business__card-people {
+                    border-radius: 120px 24px 24px 24px;
+                }
+
+            }
+        }
+    }
+
+    .valores {
+        font-size: 95%;
+
+        .valores__title-container {
+            font-size: 3.5em;
+            .valores__logo {
+                width: 130px;
+                height: 130px;
+            }
+
+            .valores__title {
+                margin: 0 25px;
+            }
+        }
+
+        .valores__container {
+            .valores__img {
+                width: 1200px;
+                height: 500px;
+
+                p {
+                    font-size: 2.5em;
+                    line-height: 60px;
+
+                    &:last-of-type {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .services {
+        font-size: 90%;
+
+        .services__text {
+            .services__title{
+                font-size: 4em;
+            }
+            .services__subtitle {
+                margin: 20px 0 80px;
+                font-size: 1.6rem;
+            }
+        }
+
+        &__cards {
+            &-container {
+                .services__card {
+                    .services__title {
+                        font-size: 1.7em;
+                        max-width: 150px;
+                    }
+                }
+
+                .services__card-green {
+                    border-radius: 100px 24px 24px 24px;
+                }
+
+                .services__card-orange {
+                    border-radius: 24px 100px 24px 24px;
+                }
+
+                .services__card-blue {
+                    border-radius: 20px;
+                }
+
+            }
+        }
+
+        .services__desc {
+            border-radius: 50px;
+            font-size: 2.2em;
+        }
+    }
+
+    .stages {
+        font-size: 90%;
+
+        .stages__title {
+            font-size: 3em;
+        }
+
+        .stages__desc {
+            font-size: 1.6rem;
+        }
+
+        .stages__card {
+            .stages__card-title {
+                font-size: 1.6rem;
+            }
+
+            .stages__card-subtitle {
+                font-size: 1.6rem;
+                margin: 0 0 0 60px;
+            }
+        }
+
+        .stages__button {
+            border-radius: 10px;
+            width: 190px;
+            height: 55px;
+            font-size: 1.5em;
+            margin-top: 50px;
+        }
+    }
+
+
+
+    .datos {
+        margin-top: 180px;
+
+        .datos__card-container {
+            .datos_card {
+                border-radius: 100px 24px 24px 24px;
+                ul {
+                    left: 0px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin-top: 30px
+                }
+
+                h3 {
+                    font-size: 25px;
+                    padding-top: 20px;
+                }
+            }
+        }
+
+    }
+
+    .clientes {
+        .clientes_text {
+            .clientes_title{
+                font-size: 4em;
+            }
+            .clientes_subtitle {
+                font-size: 1.6rem;
+            }
+        }
+
+        .clientes__carrusel {
+            .container-clientes {
+                .clientes__card {
+                    p {
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonios {
+        font-size: 110%;
+
+        .testimonios_text{
+            .testimonios_title{
+                font-size: 4em;
+            }
+        }
+        .testimonios-container {
+            .card-testimonio {
+                margin: 50px 40px 50px;
+                width: 320px;
+
+                .card-text {
+                    line-height: 25px;
+                    font-size: 17px;
+                }
+
+                .card-footer {
+                    p {
+                        padding-left: 30px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacto {
+        .contacto-card {
+            height: 600px;
+
+            p {
+                font-size: 20px;
+                line-height: 28px;
+
+                &:first-of-type {
+                    padding-top: 8%;
+                }
+            }
+        }
+
+        .contacto-container {
+            .contacto-title {
+                height: 420px;
+                padding-top: 30px;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                .contacto__container-img {
+                    height: 320px;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+        }
+
+        .contacto-footer {
+            p {
+                &:first-of-type {
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 100px;
+
+        .footer_container {
+            .menu_footer {
+                font-size: 25px;
+            }
+
+            .logos__container {
+                .fa-whatsapp {
+                    width: 50px;
+                    font-size: 35px;
+                }
+
+                .fa-facebook-f {
+                    width: 50px;
+                    font-size: 35px;
+                }
+
+                .fa-instagram {
+                    width: 50px;
+                    font-size: 35px;
+                }
+
+                .fa-linkedin {
+                    width: 50px;
+                    font-size: 35px;
+                }
+            }
+
+            .footer__container-logo{
+                img{
+                    width: 180px;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    header {
+        height: 75px;
+
+        .logo__container {
+            .logo {
+                width: 60px;
+                height: 60px;
+                font-size: 1.2em;
+            }
+        }
+
+        nav {
+            ul {
+                width: 800px;
+                justify-content: flex-end;
+
+                li {
+                    font-size: 1.1em;
+                    margin: 0 10px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+
+    .home {
+        font-size: 60%;
+        height: 800px;
+
+        .home__title {
+            height: 1000px;
+
+            .home__button {
+                font-size: 1.3em;
+                height: 38px;
+                width: 130px;
+                border-radius: 8px;
+            }
+        }
+
+        .home__bg-container {
+            .home__bg {
+                height: 750px;
+                min-height: 500px;
+            }
+        }
+    }
+
+    .business {
+        font-size: 60%;
+        margin: 0 0 50px 0;
+
+        .business__text {
+            .business__title {
+                max-width: 540px;
+            }
+        }
+
+        .business__cards {
+            margin: 70px 0px;
+
+            .business__cards-container {
+                .business__card {
+                    width: 190px;
+                    height: 180px;
+                    margin: 0 20px;
+
+                    .business__img {
+                        width: 115px;
+                        height: 115px;
+                        top: -45px;
+                    }
+
+                    .business__title {
+                        font-weight: 1000;
+                        font-size: 16px;
+                    }
+                }
+
+                .business__card-business {
+                    border-radius: 24px 100px 24px 24px;
+                }
+
+                .business__card-people {
+                    border-radius: 100px 24px 24px 24px;
+                }
+            }
+        }
+
+        .business__subtitle {
+            font-size: 1.7em;
+        }
+    }
+
+    .valores {
+        font-size: 70%;
+
+        .valores__title-container {
+            margin: 0px;
+
+            .valores__title {
+                margin: 0 20px;
+                font-size: 1.2em;
+            }
+
+            .valores__logo {
+                width: 85px;
+                height: 85px;
+                font-size: 1em;
+            }
+        }
+
+        .valores__container {
+            margin-bottom: 10px;
+
+            .valores__text {
+                ul {
+                    li {
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+
+            .valores__img {
+                height: 350px;
+
+                p {
+                    line-height: 50px;
+
+                    &:last-of-type {
+                        margin-bottom: 30px;
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        font-size: 78%;
+
+        .services__desc {
+            font-size: 1.5em;
+            max-width: 900px;
+        }
+
+        .services__text {
+            .services__title {
+                margin-top: 10px;
+            }
+
+            .services__subtitle {
+                margin-top: 5px;
+                margin-bottom: 50px;
+                max-width: 900px;
+            }
+        }
+
+        .services__cards-container {
+            .services__card {
+                width: 180px;
+                height: 170px;
+                margin: 0 40px;
+
+                .services__img {
+                    width: 120px;
+                    height: 120px;
+                    top: -50px;
+
+                }
+
+                .services__title {
+                    font-size: 1.3em;
+                }
+            }
+
+            .services__card-blue {
+                height: 190px;
+                border-radius: 14px;
+
+                .services__title {
+                    margin-bottom: 45px;
+                    width: 100px;
+                }
+            }
+
+            .services__card-green {
+                border-radius: 80px 14px 14px 14px;
+            }
+
+            .services__card-orange {
+                border-radius: 14px 80px 14px 14px;
+            }
+        }
+
+        .services__desc {
+            border-radius: 40px;
+            font-size: 1.6em;
+            padding: 40px 40px;
+        }
+    }
+
+    .stages {
+        font-size: 70%;
+
+        .stages__desc {
+            width: 800px;
+        }
+
+        .stages__cards {
+            .stages__card {
+                min-height: 80px;
+                width: 700px;
+
+                .stages__card-title {
+                    min-height: 80px;
+                }
+            }
+
+            .stages__card-cream {
+                .stages__card-title {
+                    width: 170px;
+                }
+
+                .stages__card-subtitle {
+                    max-width: 350px;
+                    margin: 0 0 0 85px;
+                }
+            }
+
+            .stages__card-orange {
+                .stages__card-title {
+                    width: 230px;
+
+                }
+
+                .stages__card-subtitle {
+                    max-width: 250px;
+                    margin: 0 0 0 85px;
+                }
+            }
+
+            .stages__card-green {
+                .stages__card-title {
+                    width: 300px;
+
+                }
+
+                .stages__card-subtitle {
+                    max-width: 300px;
+                }
+            }
+
+            .stages__card-blue {
+                .stages__card-title {
+                    width: 350px;
+
+                }
+
+                .stages__card-subtitle {
+                    max-width: 300px;
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+
+        .stages__button {
+            font-size: 1.3em;
+            border-radius: 10px;
+        }
+    }
+
+    .datos {
+        font-size: 70%;
+        height: 350px;
+        margin-top: 150px;
+
+        .datos_text-container {
+            .datos_text {
+                width: 400px;
+                font-size: 35px;
+            }
+        }
+
+        .datos__card-container {
+            .datos_card {
+                width: 400px;
+                height: 300px;
+                border-radius: 80px 24px 24px 24px;
+
+                h3 {
+                    font-size: 20px;
+                    top: 30px;
+                }
+
+                ul {
+                    margin-top: 40px;
+                    left: 20px;
+                    font-size: 13px;
+
+                    li {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .clientes {
+        font-size: 70%;
+
+        .clientes_text {
+            .clientes_title {
+                margin-top: 10px;
+            }
+        }
+
+        .clientes__carrusel {
+            width: 800px;
+
+            .container-clientes {
+                .clientes__card {
+
+                    div {
+                        width: 200px;
+                    }
+
+                    img {
+                        width: 220px;
+                        height: 250px;
+                    }
+
+                    h4 {
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonios {
+        font-size: 70%;
+
+        .testimonios_text {
+            .testimonios_title {
+                margin-top: 20px;
+            }
+
+            .testimonios_subtitle {
+                margin: 20px 0;
+            }
+        }
+
+        .testimonios-container {
+            .card-testimonio {
+                width: 250px;
+                height: 300px;
+                margin: 10px 20px 50px;
+
+                .card-text {
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+
+                p {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                .card-footer {
+                    p {
+                        padding-left: 30px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+
+            img {
+                left: 200px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .contacto {
+        font-size: 75%;
+
+        .contacto-card {
+            height: 500px;
+            width: 560px;
+            border-radius: 100px 24px 24px 0px;
+
+            p {
+                line-height: 22px;
+                font-size: 15px;
+
+                &:first-of-type {
+                    padding-top: 8%;
+                }
+            }
+
+        }
+
+        .contacto-container {
+            .contacto-title {
+                height: 400px;
+                width: 300px;
+                padding: 40px 0px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                h3 {
+                    font-size: 2.5em;
+                    line-height: 30px;
+                    margin: 0 30px;
+                }
+            }
+
+            .contacto__container-img {
+                height: 300px;
+            }
+        }
+
+        .contacto-footer {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 2.2em;
+            }
+
+            p {
+
+                &:first-of-type {
+                    margin-top: 30px;
+                    font-size: 28px;
+                }
+
+                &:last-of-type {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: 70%;
+        margin-top: 100px;
+
+        .footer_container {
+            padding: 0 55px;
+
+            .logos__container {
+                .fa-whatsapp {
+                    width: 30px;
+                    font-size: 25px;
+                }
+
+                .fa-facebook-f {
+                    width: 30px;
+                    font-size: 25px;
+                }
+
+                .fa-instagram {
+                    width: 30px;
+                    font-size: 25px;
+                }
+
+                .fa-linkedin {
+                    width: 30px;
+                    font-size: 25px;
+                }
+            }
+
+            .menu_footer {
+                font-size: 18px;
+
+            }
+
+            .footer_container-logo {
+                img {
+                    width: 130px;
+                }
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px;
+        }
+    }
+}
