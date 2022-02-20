@@ -534,7 +534,7 @@ header {
             font-weight: 800;
             margin: 0 30px; }
         .business__cards-container .business__card-people {
-          border-radius: 100px 24px 24px 24px;
+          border-radius: 50px 24px 24px 24px;
           align-self: end;
           justify-self: center; }
           .business__cards-container .business__card-people .business__img {
@@ -547,7 +547,7 @@ header {
           position: relative;
           bottom: 0px; }
         .business__cards-container .business__card-business {
-          border-radius: 24px 100px 24px 24px;
+          border-radius: 24px 50px 24px 24px;
           align-self: start;
           justify-self: center; }
           .business__cards-container .business__card-business .business__img {
@@ -621,7 +621,7 @@ header {
             font-weight: 800;
             margin: 0 30px; }
         .business__cards-container .business__card-people {
-          border-radius: 100px 24px 24px 24px;
+          border-radius: 50px 24px 24px 24px;
           align-self: end;
           justify-self: center; }
           .business__cards-container .business__card-people .business__img {
@@ -634,7 +634,7 @@ header {
           position: relative;
           bottom: 0px; }
         .business__cards-container .business__card-business {
-          border-radius: 24px 100px 24px 24px;
+          border-radius: 24px 50px 24px 24px;
           align-self: start;
           justify-self: center; }
           .business__cards-container .business__card-business .business__img {
