@@ -72,7 +72,6 @@ footer {
 
     .menu_footer {
       font-size: 20px;
-
       h3 {
         color: $color-orange;
       }
@@ -88,10 +87,8 @@ footer {
         margin-left: 0px;
       }
     }
-
     .footer__container-logo {
       justify-self: flex-end;
-
       img {
         width: 150px;
       }
@@ -101,9 +98,225 @@ footer {
   p {
     margin: 30px;
     text-align: center;
-    a {
-      font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  footer {
+    margin-top: 50px;
+
+    .footer_container {
+      display: grid;
+      margin-bottom: 40px;
+      padding: 0 100px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content max-content;
+
+      .logos__container {
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        .fa-whatsapp {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: $color-green;
+          color: white;
+          font-size: 30px;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-facebook-f {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: $color-blue;
+          color: white;
+          font-size: 30px;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-instagram {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: $color-orange;
+          color: white;
+          font-size: 30px;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-linkedin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: $color-blue-light;
+          color: white;
+          font-size: 30px;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+      }
+
+      .menu_footer {
+        font-size: 20px;
+        h3 {
+          color: $color-orange;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        li {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+      .footer__container-logo {
+        justify-self: flex-end;
+        align-self: center;
+        img {
+          width: 150px;
+        }
+      }
+    }
+
+    p {
+      margin: 30px;
+      text-align: center;
     }
   }
 }
+@media only screen and (max-width: 555px) {
+  footer {
+    margin-top: 50px;
 
+    .footer_container {
+      display: grid;
+      margin-bottom: 40px;
+      padding: 0 30px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content max-content;
+
+      .logos__container {
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        .fa-whatsapp {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          background-color: $color-green;
+          color: white;
+          font-size: 1.5em;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-facebook-f {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          background-color: $color-blue;
+          color: white;
+          font-size: 1.5em;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-instagram {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          background-color: $color-orange;
+          color: white;
+          font-size: 1.5em;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+
+        .fa-linkedin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          background-color: $color-blue-light;
+          color: white;
+          font-size: 1.5em;
+          border-radius: 50%;
+          padding: 45%;
+          margin: 10px;
+        }
+      }
+
+      .menu_footer {
+        font-size: 1em;
+        h3 {
+          color: $color-orange;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        li {
+          list-style-type: none;
+          margin-left: 0px;
+        }
+      }
+      .footer__container-logo {
+        justify-self: flex-end;
+        align-self: center;
+        img {
+          width: 100px;
+        }
+      }
+    }
+
+    p {
+      margin: 30px;
+      text-align: center;
+    }
+  }
+}

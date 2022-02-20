@@ -1,18 +1,17 @@
 .contacto {
   margin-top: 80px;
-
   .contacto-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
     .contacto-title {
       background: linear-gradient(135deg, #fceee9 0%, #ecf8f8 100%);
       border-radius: 100px 0px 0px 24px;
       height: 592px;
       padding: 70px 0px;
       width: max-content;
+      padding-top: 70px;
       text-align: center;
       position: relative;
       bottom: -40px;
@@ -31,12 +30,10 @@
         font-family: $font-cursiva;
         margin: 0 70px;
       }
-
       .contacto__container-img {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-
         img {
           padding: 40px 0px;
         }
@@ -49,7 +46,7 @@
     height: 681px;
     background: $color-orange;
     color: #ffece1;
-    border-radius: 150px 24px 24px 0px;
+    border-radius: 100px 24px 24px 0px;
 
     p {
       padding-left: 10%;
@@ -88,18 +85,341 @@
         font-weight: bold;
         font-size: 30px;
         line-height: 64px;
-        margin-top: 150px;
-        font-family: $font-cursiva;
+        margin-top: 80px;
       }
 
       &:last-of-type {
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 64px;
         color: $color-green;
-        font-family: $font-minuscula;
       }
     }
   }
+}
+@media only screen and (max-width: 1250px) {
+  .contacto {
+    margin-top: 80px;
+    .contacto-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 50px;
+      .contacto-title {
+        background: linear-gradient(135deg, #fceee9 0%, #ecf8f8 100%);
+        border-radius: 100px 0px 0px 24px;
+        height: 592px;
+        padding: 70px 0px;
+        width: max-content;
+        padding-top: 70px;
+        text-align: center;
+        position: relative;
+        bottom: -40px;
+
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 32px;
+          color: $color-orange;
+        }
+
+        h3 {
+          font-weight: 900;
+          font-size: 2em;
+          line-height: 64px;
+          font-family: $font-cursiva;
+          margin: 0 70px;
+        }
+        .contacto__container-img {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding-left: 20px;
+          img {
+            padding: 40px 0px;
+          }
+        }
+      }
+    }
+
+    .contacto-card {
+      width: 761px;
+      height: 681px;
+      background: $color-orange;
+      color: #ffece1;
+      border-radius: 100px 24px 24px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 30px;
+        padding-top: 20px;
+
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .contacto-footer {
+      margin-top: 100px;
+      text-align: center;
+
+      h3 {
+        font-family: $font-cursiva;
+        font-size: 2em;
+        line-height: 64px;
+        color: $color-blue;
+        font-style: normal;
+        font-weight: normal;
+
+        span {
+          font-family: $font-minuscula;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        &:first-of-type {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 64px;
+          margin-top: 80px;
+        }
+
+        &:last-of-type {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 64px;
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .contacto {
+    margin-top: 80px;
+    .contacto-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 50px;
+      .contacto-title {
+        background: inherit;
+        border-radius: 100px 0px 0px 24px;
+        height: max-content;
+        padding: 0px;
+        width: 80%;
+        padding-top: 70px;
+        text-align: start;
+        position: relative;
+        bottom: 0px;
+
+        p {
+          font-weight: bold;
+          font-size: 1em;
+          line-height: 1em;
+          color: $color-orange;
+          width: 250px;
+          text-align: center;
+        }
+
+        h3 {
+          width: 250px;
+          text-align: center;
+          font-weight: 900;
+          font-size: 2em;
+          line-height: 2em;
+          font-family: $font-cursiva;
+          margin: 0 0 20px 0;
+        }
+        .contacto__container-img {
+          width: max-content;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          img {
+            width: 200px;
+            padding: 40px 0px;
+          }
+        }
+      }
+    }
+
+    .contacto-card {
+      width: 90%;
+      height: max-content;
+      background: $color-orange;
+      color: #ffece1;
+      border-radius: 100px 24px 24px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 0;
+      p {
+        padding-left: 10%;
+        padding-right: 5%;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 30px;
+        padding-top: 20px;
+
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .contacto-footer {
+      margin-top: 50px;
+      text-align: center;
+
+      h3 {
+        font-family: $font-cursiva;
+        font-size: 2em;
+        line-height: 64px;
+        color: $color-blue;
+        font-style: normal;
+        font-weight: normal;
+
+        span {
+          font-family: $font-minuscula;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        &:first-of-type {
+          font-weight: bold;
+          font-size: 1.5em;
+          line-height: 40px;
+          margin-top: 80px;
+          font-family: $font-cursiva;
+        }
+
+        &:last-of-type {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.3em;
+          line-height: 40px;
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 666px) {
+    .contacto {
+        margin-top: 0px;
+        .contacto-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding: 30px;
+          .contacto-title {
+            background: inherit;
+            border-radius: 100px 0px 0px 24px;
+            height: max-content;
+            padding: 0px;
+            width: 100%;
+            padding-top: 70px;
+            text-align: start;
+            position: relative;
+            bottom: 0px;
+            p {
+              font-weight: bold;
+              font-size: .8em;
+              line-height: 1em;
+              color: $color-orange;
+              width: 190px;
+              text-align: center;
+            }
+    
+            h3 {
+              width: 190px;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.5em;
+              line-height: 2em;
+              font-family: $font-cursiva;
+              margin: 0 0 10px 0;
+            }
+            .contacto__container-img {
+              width: max-content;
+              height: max-content;
+              display: block;
+              position: absolute;
+              bottom: 300px;
+              right: 0;
+              img {
+                width: 130px;
+                padding: 0;
+                position: relative;
+                bottom: -80px;
+                right: 20px;
+              }
+            }
+          }
+        }
+    
+        .contacto-card {
+          width: 100%;
+          height: max-content;
+          background: $color-orange;
+          color: #ffece1;
+          border-radius: 100px 24px 24px 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 80px 0;
+          p {
+            padding-left: 10%;
+            padding-right: 5%;
+            font-weight: 300;
+            font-size: .8em;
+            line-height: 1.3em;
+            padding-top: 20px;
+    
+            &:first-of-type {
+              padding-top: 0;
+            }
+          }
+        }
+    
+        .contacto-footer {
+          margin-top: 30px;
+          text-align: center;
+    
+          h3 {
+            font-family: $font-cursiva;
+            color: $color-blue;
+            font-style: normal;
+            font-weight: normal;
+            line-height: inherit;
+            font-size: 1.5em;
+            padding: 0 30px;
+            width: 100%;
+          }
+    
+          p {
+            &:first-of-type {
+              margin-top: 20px;
+            }
+          }
+        }
+      } 
 }
