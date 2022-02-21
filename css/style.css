@@ -2680,6 +2680,14 @@ footer {
   footer p {
     margin: 30px;
     text-align: center; }
+  footer .creators {
+    font-weight: 400;
+    color: grey; }
+    footer .creators a {
+      font-weight: 600; }
+      footer .creators a:hover {
+        color: #333333;
+        transition: .5s; }
 
 @media only screen and (max-width: 1050px) {
   footer {

@@ -99,6 +99,17 @@ footer {
     margin: 30px;
     text-align: center;
   }
+  .creators {
+    font-weight: 400;
+    color: grey;
+    a{
+      font-weight: 600;
+      &:hover{
+        color: $color-black;
+        transition: .5s;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1050px) {
   footer {
@@ -208,6 +219,7 @@ footer {
       margin: 30px;
       text-align: center;
     }
+    
   }
 }
 @media only screen and (max-width: 555px) {
