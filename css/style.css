@@ -35,8 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0px 0px 15px 0px #424242; }
@@ -138,7 +137,8 @@ header {
 
 .home {
   position: relative;
-  height: 900px; }
+  height: 900px;
+  margin-top: 100px; }
   .home__bg-container {
     position: absolute;
     width: 100%; }
@@ -737,12 +737,12 @@ header {
       color: #333333;
       font-weight: 800;
       text-align: center;
-      margin-top: 50px; }
+      margin-top: 40px; }
     .services__text .services__subtitle {
       font-size: 1.5em;
       text-align: center;
       font-weight: 300;
-      margin: 70px 0;
+      margin: 50px 0;
       max-width: 1020px;
       padding: 30px; }
       .services__text .services__subtitle span {

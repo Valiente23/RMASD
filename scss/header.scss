@@ -5,8 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0px 0px 15px 0px rgb(66, 66, 66);
@@ -103,6 +102,7 @@ header {
 }
 @media only screen and (max-width: 1050px) {
   header{
+    
     .logo__container {
       .logo {
         width: 66px;
