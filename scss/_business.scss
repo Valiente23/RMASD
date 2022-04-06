@@ -17,11 +17,11 @@
     align-items: center;
 
     .business__title {
-      font-size: 3em;
+      font-size: 2.5rem;
       font-family: $font-cursiva;
       color: $color-green;
       font-weight: 500;
-      max-width: 900px;
+      max-width: 70%;
       text-align: center;
 
       .bold {
@@ -56,8 +56,8 @@
         position: relative;
         flex-direction: column-reverse;
         align-items: center;
-        width: 270px;
-        height: 240px;
+        width: 18em;
+        height: 18em;
         margin: 0 40px;
         border-radius: 24px;
         box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2);
@@ -65,8 +65,8 @@
         .business__img {
           position: absolute;
           top: -65px;
-          width: 182px;
-          height: 182px;
+          width: 10em;
+          height: 10em;
           border-radius: 50%;
           background-color: $color-blue;
           display: flex;
@@ -125,7 +125,7 @@
     }
   }
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 780px) {
   .business {
     &__text {
       display: flex;

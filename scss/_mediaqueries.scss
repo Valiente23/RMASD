@@ -1,0 +1,17 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+html{
+    font-size: 70%;
+}
+
+.testimonios{
+    .testimonios-container {
+        .card-testimonio{
+            width: 24em;
+            height: 350px;
+            .card-text{
+                line-height: 20px;
+            }
+        }
+    }
+}
+}

@@ -9,8 +9,8 @@ $color-orange-ligth: #ecb976;
 $color-orange-ligth2: #ffcaa0;
 $color-cream-dark: #ffe0c5;
 $color-cream: #ffece1;
-$font-minuscula: "Poppins", serif;
-$font-cursiva: "Playfair Display", serif;
+$font-minuscula: "Poppins",serif;
+$font-cursiva: "Playfair Display",serif;
 
 * {
   margin: 0;
@@ -18,44 +18,53 @@ $font-cursiva: "Playfair Display", serif;
   box-sizing: border-box;
   font-family: $font-minuscula;
   text-decoration: none;
+
   a {
     color: inherit;
   }
+
+  h2{
+    font-weight: normal;
+  }
 }
-html {
-  overflow-x:hidden;
-}
+
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+
   &::-webkit-scrollbar {
     width: 14px;
     background: #ffffff;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: #c9c9c9;
     border: 2px solid #ffffff;
     border-radius: 7px;
   }
-  width: 100%;
-  overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1rem;
 }
 
 section {
   scroll-margin-top: 100px;
 }
 
-@import "header.scss";
-@import "home.scss";
-@import "business.scss";
-@import "digital.scss";
-@import "services.scss";
-@import "stages.scss";
-@import "valores.scss";
-@import "datos.scss";
-@import "clientes.scss";
-@import "testimonios.scss";
-@import "contacto.scss";
-@import "footer.scss";
+@import "header";
+@import "home";
+@import "business";
+@import "digital";
+@import "services";
+@import "stages";
+@import "valores";
+@import "datos";
+@import "clientes";
+@import "testimonios";
+@import "contacto";
+@import "footer";
+@import "mediaqueries";

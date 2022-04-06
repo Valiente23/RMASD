@@ -1,6 +1,6 @@
 .datos {
     margin-top: 250px;
-    height: 500px;
+    height: 30em;
     background-image: url(../imgs/img-datos.JPG);
     background-size: cover;
     display: flex;
@@ -15,8 +15,8 @@
             background-color: $color-blue;
             color: white;
             border-radius: 100px 24px 24px 24px;
-            width: 573.15px;
-            height: 424px;
+            width: 80%;
+            height: 30em;
             position: relative;
             top: -80px;
             letter-spacing: 1px;
@@ -27,7 +27,7 @@
             h3 {
                 color: $color-orange;
                 letter-spacing: 1px;
-                font-size: 30px;
+                font-size: 2rem;
                 position: relative;
                 text-align: center;
                 top: 20px;
@@ -35,8 +35,6 @@
     
             ul {
                 margin-top: 20px;
-                position: relative;
-                left: 50px;
                 color: #FFECE1;
     
                 li {
@@ -52,10 +50,10 @@
         align-items: center;
         .datos_text {
             color: $color-blue;
-            font-size: 50px;
+            font-size: 3rem;
             font-style: italic;
             font-family: $font-cursiva;
-            width: 584px;
+            width:85%;
             height: 200px;
     
             span {
@@ -66,7 +64,7 @@
     }
     
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 780px) {
     .datos {
         margin-top: 80px;
         height: max-content;

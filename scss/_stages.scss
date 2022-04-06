@@ -8,6 +8,7 @@
         text-align: center;
         font-family: $font-cursiva;
         font-size: 2em;
+        font-weight: bold;
     }
 
     &__desc {
@@ -126,7 +127,7 @@
           }
     }
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
     .stages {
         display: flex;
         flex-direction: column;

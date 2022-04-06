@@ -6,9 +6,8 @@
   text-decoration: none; }
   * a {
     color: inherit; }
-
-html {
-  overflow-x: hidden; }
+  * h2 {
+    font-weight: normal; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -23,7 +22,9 @@ body {
     border-radius: 7px; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1rem; }
 
 section {
   scroll-margin-top: 100px; }
@@ -98,13 +99,18 @@ header {
           width: 65%;
           opacity: 1; }
 
-@media only screen and (max-width: 1250px) {
-  header .logo__container {
-    padding: 0 0 0 50px; }
-  header nav {
-    padding: 0 0 0 50px; } }
+@media only screen and (max-width: 1450px) {
+  header {
+    height: 80px; }
+    header .logo__container {
+      padding: 0 0 0 50px; }
+      header .logo__container .logo {
+        width: 70px;
+        height: 70px; }
+    header nav {
+      padding: 0 0 0 50px; } }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   header .logo__container .logo {
     width: 66px;
     height: 66px;
@@ -185,9 +191,12 @@ header {
       .home__title .home__button:hover {
         color: #ffcaa0; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 80%; }
   .home {
-    height: 700px; }
+    height: 700px;
+    margin-top: 25px; }
     .home__bg-container {
       width: 100%;
       height: 700px; }
@@ -197,7 +206,10 @@ header {
     .home__title {
       height: 700px; }
       .home__title .home__text {
-        font-size: 5em; } }
+        font-size: 5em; }
+      .home__title .home__button {
+        width: 150px;
+        height: 40px; } }
 
 @media only screen and (max-width: 850px) {
   .home {
@@ -258,11 +270,11 @@ header {
     flex-direction: column;
     align-items: center; }
     .business__text .business__title {
-      font-size: 3em;
+      font-size: 2.5rem;
       font-family: "Playfair Display", serif;
       color: #4c7031;
       font-weight: 500;
-      max-width: 900px;
+      max-width: 70%;
       text-align: center; }
       .business__text .business__title .bold {
         font-family: "Playfair Display", serif;
@@ -286,16 +298,16 @@ header {
         position: relative;
         flex-direction: column-reverse;
         align-items: center;
-        width: 270px;
-        height: 240px;
+        width: 18em;
+        height: 18em;
         margin: 0 40px;
         border-radius: 24px;
         box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2); }
         .business__cards-container .business__card .business__img {
           position: absolute;
           top: -65px;
-          width: 182px;
-          height: 182px;
+          width: 10em;
+          height: 10em;
           border-radius: 50%;
           background-color: #00445d;
           display: flex; }
@@ -332,7 +344,7 @@ header {
             align-self: center;
             width: 50%; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 780px) {
   .business__text {
     display: flex;
     flex-direction: column;
@@ -785,7 +797,7 @@ header {
           color: #333333;
           font-weight: 400;
           margin: 0 0 35px 0;
-          max-width: 200px;
+          max-width: 80%;
           color: white; }
       .services__cards-container .services__card-green {
         border-radius: 100px 24px 24px 24px;
@@ -821,23 +833,25 @@ header {
     font-size: 2em;
     font-weight: 400;
     text-align: center;
-    max-width: 1200px;
+    max-width: 80%;
     font-family: "Playfair Display", serif;
     color: #4c7031;
     background-color: #ffece1;
     padding: 50px 60px;
     margin: 70px 0 0 0;
-    border-radius: 50px; }
+    border-radius: 30px; }
     .services .services__desc span {
       font-weight: 700;
       font-family: "Playfair Display", serif; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1450px) {
   .services__text .services__title {
     font-size: 2em;
     margin-top: 30px; }
   .services__text .services__subtitle {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin: 10px 0px 40px;
+    padding: 20px 80px; }
   .services__cards {
     width: 100%;
     display: flex;
@@ -913,13 +927,10 @@ header {
     font-size: 1.5em;
     font-weight: 400;
     text-align: center;
-    max-width: 100%;
     font-family: "Playfair Display", serif;
     color: #4c7031;
     background-color: #ffece1;
-    padding: 50px;
-    margin: 70px 0 0 0;
-    border-radius: 0px; }
+    margin: 70px 0 0 0; }
     .services .services__desc span {
       font-weight: 700;
       font-family: "Playfair Display", serif; } }
@@ -1202,7 +1213,8 @@ header {
     width: max-content;
     text-align: center;
     font-family: "Playfair Display", serif;
-    font-size: 2em; }
+    font-size: 2em;
+    font-weight: bold; }
   .stages__desc {
     max-width: 1020px;
     font-weight: 300;
@@ -1284,7 +1296,7 @@ header {
     .stages .stages__button:hover {
       color: #ffcaa0; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   .stages {
     display: flex;
     flex-direction: column;
@@ -1458,12 +1470,12 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: "Playfair Display", serif;
     font-weight: 800;
     color: #333333;
     height: 100px;
-    margin: 35px 0; }
+    margin: 30px 0px 0px; }
     .valores .valores__title-container .valores__title {
       font-family: "Playfair Display", serif;
       margin: 0 10px; }
@@ -1474,8 +1486,8 @@ header {
       justify-content: center;
       align-items: center;
       align-content: center;
-      width: 130px;
-      height: 130px;
+      width: 3.5em;
+      height: 3.5em;
       border-radius: 100%;
       color: white;
       font-weight: 500; }
@@ -1501,12 +1513,12 @@ header {
         .valores .valores__container .valores__text ul li {
           list-style: none;
           font-weight: 700;
-          font-size: 2.5em;
+          font-size: 1.8rem;
           padding: 15px;
           display: flex;
           width: max-content; }
           .valores .valores__container .valores__text ul li img {
-            width: 50px;
+            width: 30px;
             margin: 0 15px 5px; }
         .valores .valores__container .valores__text ul .simple {
           color: #f49619; }
@@ -1529,10 +1541,12 @@ header {
         font-size: 1.8em;
         max-width: 800px;
         margin-left: 15%; }
+        .valores .valores__container .valores__img p:first-of-type {
+          padding-bottom: 50px; }
         .valores .valores__container .valores__img p span {
           font-weight: 600; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1450px) {
   .valores {
     width: 100%;
     display: flex;
@@ -1544,12 +1558,10 @@ header {
       justify-content: center;
       align-items: center;
       text-align: center;
-      font-size: 2.5em;
       font-family: "Playfair Display", serif;
       font-weight: 800;
       color: #333333;
-      height: 100px;
-      margin: 35px 0; }
+      height: 100px; }
       .valores .valores__title-container .valores__title {
         font-family: "Playfair Display", serif;
         margin: 0 10px; }
@@ -1560,8 +1572,6 @@ header {
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 110px;
-        height: 110px;
         border-radius: 100%;
         color: white;
         font-weight: 500; }
@@ -1587,7 +1597,6 @@ header {
           .valores .valores__container .valores__text ul li {
             list-style: none;
             font-weight: 700;
-            font-size: 2.5em;
             padding: 15px;
             display: flex;
             width: max-content; }
@@ -1605,7 +1614,7 @@ header {
         flex-direction: column;
         justify-content: center;
         width: 1000px;
-        height: 400px;
+        height: 350px;
         background-image: url(../imgs/img-sobre-nosotros.png);
         background-size: cover; }
         .valores .valores__container .valores__img p {
@@ -1618,11 +1627,10 @@ header {
           .valores .valores__container .valores__img p span {
             font-weight: 600; } }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   .valores {
     flex-direction: column; }
     .valores .valores__title-container {
-      font-size: 2em;
       height: 60px;
       margin: 0; }
       .valores .valores__title-container .valores__title {
@@ -1645,7 +1653,6 @@ header {
           flex-direction: row;
           width: max-content; }
           .valores .valores__container .valores__text ul li {
-            font-size: 1.5em;
             padding: 15px 10px;
             display: flex; }
             .valores .valores__container .valores__text ul li img {
@@ -1715,7 +1722,7 @@ header {
 
 .datos {
   margin-top: 250px;
-  height: 500px;
+  height: 30em;
   background-image: url(../imgs/img-datos.JPG);
   background-size: cover;
   display: flex;
@@ -1730,8 +1737,8 @@ header {
       background-color: #00445d;
       color: white;
       border-radius: 100px 24px 24px 24px;
-      width: 573.15px;
-      height: 424px;
+      width: 80%;
+      height: 30em;
       position: relative;
       top: -80px;
       letter-spacing: 1px;
@@ -1741,14 +1748,12 @@ header {
       .datos .datos__card-container .datos_card h3 {
         color: #f49619;
         letter-spacing: 1px;
-        font-size: 30px;
+        font-size: 2rem;
         position: relative;
         text-align: center;
         top: 20px; }
       .datos .datos__card-container .datos_card ul {
         margin-top: 20px;
-        position: relative;
-        left: 50px;
         color: #FFECE1; }
         .datos .datos__card-container .datos_card ul li {
           margin-top: 20px; }
@@ -1759,16 +1764,16 @@ header {
     align-items: center; }
     .datos .datos_text-container .datos_text {
       color: #00445d;
-      font-size: 50px;
+      font-size: 3rem;
       font-style: italic;
       font-family: "Playfair Display", serif;
-      width: 584px;
+      width: 85%;
       height: 200px; }
       .datos .datos_text-container .datos_text span {
         font-weight: 900;
         font-family: "Playfair Display", serif; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 780px) {
   .datos {
     margin-top: 80px;
     height: max-content;
@@ -1907,7 +1912,7 @@ header {
       color: #333333;
       font-weight: 800;
       text-align: center;
-      margin-top: 50px; }
+      margin-top: 20px; }
     .clientes .clientes_text .clientes_subtitle {
       font-size: 1.5em;
       text-align: center;
@@ -1941,10 +1946,10 @@ header {
       .clientes .clientes__carrusel .container-clientes:active {
         cursor: grabbing; }
       .clientes .clientes__carrusel .container-clientes .clientes__card {
-        margin: 30px;
+        margin: 0px 50px;
         text-align: center; }
         .clientes .clientes__carrusel .container-clientes .clientes__card img {
-          height: 280px;
+          height: 18em;
           object-fit: cover;
           margin-bottom: 20px;
           pointer-events: none; }
@@ -1953,7 +1958,7 @@ header {
           font-size: 20px;
           margin: 5px; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
   .clientes {
     margin-top: 60px;
     display: flex;
@@ -1971,7 +1976,6 @@ header {
         text-align: center;
         margin-top: 50px; }
       .clientes .clientes_text .clientes_subtitle {
-        font-size: 1.2em;
         text-align: center;
         font-weight: 300;
         margin: 30px 0;
@@ -2012,10 +2016,9 @@ header {
             pointer-events: none; }
           .clientes .clientes__carrusel .container-clientes .clientes__card p,
           .clientes .clientes__carrusel .container-clientes .clientes__card h4 {
-            font-size: 1em;
-            margin: 5px; } }
+            font-size: 100%; } }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   .clientes {
     margin-top: 60px;
     display: flex;
@@ -2126,7 +2129,7 @@ header {
         text-align: center;
         line-height: 30px; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 780px) {
   .testimonios {
     margin-top: 60px; }
     .testimonios .testimonios_text {
@@ -2199,28 +2202,6 @@ header {
             text-align: end; }
             .testimonios .testimonios-container .card__container .card-testimonio .card-footer p {
               text-align: end; } }
-
-@media only screen and (max-width: 1250px) {
-  .testimonios {
-    margin-top: 60px; }
-    .testimonios .testimonios_text {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .testimonios .testimonios_text .testimonios_title {
-        font-size: 2em;
-        font-family: "Playfair Display", serif;
-        color: #333333;
-        font-weight: 800;
-        text-align: center;
-        margin-top: 50px; }
-      .testimonios .testimonios_text .testimonios_subtitle {
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: 300;
-        margin: 20px 0;
-        padding: 0 30px;
-        width: 100%; } }
 
 @media only screen and (max-width: 550px) {
   .testimonios .testimonios-container {
@@ -2351,7 +2332,7 @@ header {
       line-height: 64px;
       color: #4c7031; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1450px) {
   .contacto {
     margin-top: 80px; }
     .contacto .contacto-container {
@@ -2363,10 +2344,10 @@ header {
       .contacto .contacto-container .contacto-title {
         background: linear-gradient(135deg, #fceee9 0%, #ecf8f8 100%);
         border-radius: 100px 0px 0px 24px;
-        height: 592px;
-        padding: 70px 0px;
+        height: 350px;
         width: max-content;
-        padding-top: 70px;
+        padding-top: 30px;
+        padding-left: 20px;
         text-align: center;
         position: relative;
         bottom: -40px; }
@@ -2387,10 +2368,11 @@ header {
           justify-content: flex-end;
           padding-left: 20px; }
           .contacto .contacto-container .contacto-title .contacto__container-img img {
-            padding: 40px 0px; }
+            padding: 0px;
+            width: 200px; }
     .contacto .contacto-card {
-      width: 761px;
-      height: 681px;
+      width: 620px;
+      height: 500px;
       background: #f49619;
       color: #ffece1;
       border-radius: 100px 24px 24px 0px;
@@ -2402,12 +2384,12 @@ header {
         padding-right: 5%;
         font-weight: 300;
         font-size: 1em;
-        line-height: 30px;
+        line-height: 22px;
         padding-top: 20px; }
         .contacto .contacto-card p:first-of-type {
           padding-top: 0; }
     .contacto .contacto-footer {
-      margin-top: 100px;
+      margin-top: 20px;
       text-align: center; }
       .contacto .contacto-footer h3 {
         font-family: "Playfair Display", serif;
@@ -2431,7 +2413,7 @@ header {
         line-height: 64px;
         color: #4c7031; } }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   .contacto {
     margin-top: 80px; }
     .contacto .contacto-container {
@@ -2622,7 +2604,7 @@ footer {
         height: 40px;
         background-color: #4c7031;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         border-radius: 50%;
         padding: 45%;
         margin: 10px; }
@@ -2634,7 +2616,7 @@ footer {
         height: 40px;
         background-color: #00445d;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         border-radius: 50%;
         padding: 45%;
         margin: 10px; }
@@ -2646,7 +2628,7 @@ footer {
         height: 40px;
         background-color: #f49619;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         border-radius: 50%;
         padding: 45%;
         margin: 10px; }
@@ -2658,12 +2640,12 @@ footer {
         height: 40px;
         background-color: #129fd2;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         border-radius: 50%;
         padding: 45%;
         margin: 10px; }
     footer .footer_container .menu_footer {
-      font-size: 20px; }
+      font-size: 1.4rem; }
       footer .footer_container .menu_footer h3 {
         color: #f49619; }
       footer .footer_container .menu_footer ul {
@@ -2689,7 +2671,7 @@ footer {
         color: #333333;
         transition: .5s; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 768px) {
   footer {
     margin-top: 50px; }
     footer .footer_container {
@@ -2776,87 +2758,42 @@ footer {
       text-align: center; } }
 
 @media only screen and (max-width: 555px) {
-  footer {
-    margin-top: 50px; }
-    footer .footer_container {
-      display: grid;
-      margin-bottom: 40px;
-      padding: 0 30px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: max-content max-content; }
-      footer .footer_container .logos__container {
-        display: flex;
-        margin: 20px;
-        align-items: center;
-        justify-content: center;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 3; }
-        footer .footer_container .logos__container .fa-whatsapp {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          background-color: #4c7031;
-          color: white;
-          font-size: 1.5em;
-          border-radius: 50%;
-          padding: 45%;
-          margin: 10px; }
-        footer .footer_container .logos__container .fa-facebook-f {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          background-color: #00445d;
-          color: white;
-          font-size: 1.5em;
-          border-radius: 50%;
-          padding: 45%;
-          margin: 10px; }
-        footer .footer_container .logos__container .fa-instagram {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          background-color: #f49619;
-          color: white;
-          font-size: 1.5em;
-          border-radius: 50%;
-          padding: 45%;
-          margin: 10px; }
-        footer .footer_container .logos__container .fa-linkedin {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          background-color: #129fd2;
-          color: white;
-          font-size: 1.5em;
-          border-radius: 50%;
-          padding: 45%;
-          margin: 10px; }
-      footer .footer_container .menu_footer {
-        font-size: 1em; }
-        footer .footer_container .menu_footer h3 {
-          color: #f49619; }
-        footer .footer_container .menu_footer ul {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start; }
-        footer .footer_container .menu_footer li {
-          list-style-type: none;
-          margin-left: 0px; }
-      footer .footer_container .footer__container-logo {
-        justify-self: flex-end;
-        align-self: center; }
-        footer .footer_container .footer__container-logo img {
-          width: 100px; }
-    footer p {
-      margin: 30px;
-      text-align: center; } }
+  footer .footer_container {
+    padding: 0 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    margin-bottom: 10px; }
+    footer .footer_container .logos__container {
+      align-items: center;
+      justify-content: center;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      footer .footer_container .logos__container .fa-whatsapp {
+        width: 25px;
+        font-size: 1.5em; }
+      footer .footer_container .logos__container .fa-facebook-f {
+        width: 25px;
+        font-size: 1.5em; }
+      footer .footer_container .logos__container .fa-instagram {
+        width: 25px;
+        font-size: 1.5em; }
+      footer .footer_container .logos__container .fa-linkedin {
+        width: 25px;
+        font-size: 1.5em; }
+    footer .footer_container .menu_footer {
+      font-size: 1em; }
+    footer .footer_container .footer__container-logo {
+      align-self: center; }
+      footer .footer_container .footer__container-logo img {
+        width: 100px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 70%; }
+  .testimonios .testimonios-container .card-testimonio {
+    width: 24em;
+    height: 350px; }
+    .testimonios .testimonios-container .card-testimonio .card-text {
+      line-height: 20px; } }

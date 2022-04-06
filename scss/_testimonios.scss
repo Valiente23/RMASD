@@ -63,7 +63,7 @@
     }
   }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 780px) {
   .testimonios {
     margin-top: 60px;
 
@@ -155,35 +155,6 @@
       }
     }
   }
-}
-@media only screen and (max-width: 1250px) {
-    .testimonios {
-        margin-top: 60px;
-    
-        .testimonios_text {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-    
-          .testimonios_title {
-            font-size: 2em;
-            font-family: $font-cursiva;
-            color: $color-black;
-            font-weight: 800;
-            text-align: center;
-            margin-top: 50px;
-          }
-    
-          .testimonios_subtitle {
-            font-size: 1.2em;
-            text-align: center;
-            font-weight: 300;
-            margin: 20px 0;
-            padding: 0 30px;
-            width: 100%;
-          }
-        }
-    }
 }
 @media only screen and (max-width: 550px) {
     .testimonios{
