@@ -1851,8 +1851,7 @@ footer {
         margin: 0px; }
   .contacto .contacto-container {
     flex-direction: column;
-    padding: 50px;
-    height: 200px; }
+    padding: 50px; }
     .contacto .contacto-container .contacto-title {
       background: inherit;
       width: 80%;
