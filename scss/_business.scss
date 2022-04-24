@@ -53,7 +53,7 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 18em;
-        height: 18em;
+        height: 17em;
         margin: 0 40px;
         border-radius: 24px;
         box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.2);
@@ -70,7 +70,7 @@
           img {
             margin: 0 auto;
             align-self: center;
-            width: 40%;
+            width: 42%;
           }
         }
 
@@ -88,13 +88,7 @@
 
         .business__img {
           background-color: $color-green;
-          display: flex;
-
-          img {
-            margin: 0 auto;
-            align-self: center;
-            width: 40%;
-          }
+          @extend .business__img;
         }
       }
 
