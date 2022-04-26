@@ -675,8 +675,8 @@
 
         &__bg-container {
             .home__bg {
-                height: 580px;
-                min-height: 400px;
+                height: 600px;
+                min-height: 550px;
             }
         }
 
@@ -818,7 +818,6 @@
                         img {
                             width: 25px;
                             margin: 0 8px 5px;
-
                         }
                     }
                 }
@@ -1290,9 +1289,9 @@
                 grid-column-end: 3;
 
                 .fa-whatsapp {
-                    width: 1.2em;
-                    height: 1.2em;
-                    font-size: 1.5em;
+                    width: 1em;
+                    height: 1em;
+                    font-size: 1.2em;
                 }
             }
 

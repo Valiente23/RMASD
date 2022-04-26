@@ -1435,8 +1435,8 @@ footer {
   .home {
     height: 650px; }
     .home__bg-container .home__bg {
-      height: 580px;
-      min-height: 400px; }
+      height: 600px;
+      min-height: 550px; }
     .home__title {
       height: 550px; }
       .home__title .home__text {
@@ -1812,9 +1812,9 @@ footer {
       grid-column-start: 1;
       grid-column-end: 3; }
       footer .footer_container .logos__container .fa-whatsapp, footer .footer_container .logos__container .fa-facebook-f, footer .footer_container .logos__container .fa-instagram, footer .footer_container .logos__container .fa-linkedin {
-        width: 1.2em;
-        height: 1.2em;
-        font-size: 1.5em; }
+        width: 1em;
+        height: 1em;
+        font-size: 1.2em; }
     footer .footer_container .menu_footer {
       font-size: 1em; }
     footer .footer_container .footer__container-logo {
