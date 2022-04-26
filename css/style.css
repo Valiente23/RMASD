@@ -1682,6 +1682,10 @@ footer {
     font-size: 1.2em; }
   .clientes .clientes__carrusel {
     width: 90%; }
+    .clientes .clientes__carrusel .container-clientes::-webkit-scrollbar-thumb {
+      background-color: #c9c9c9;
+      border: 2px solid #f5f5f5;
+      border-radius: 7px; }
     .clientes .clientes__carrusel .container-clientes .clientes__card {
       margin: 20px; }
       .clientes .clientes__carrusel .container-clientes .clientes__card img {

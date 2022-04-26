@@ -45,6 +45,7 @@ footer {
 
     .menu_footer {
       font-size: 1.4rem;
+
       h3 {
         color: $color-orange;
       }
@@ -60,8 +61,10 @@ footer {
         margin-left: 0px;
       }
     }
+
     .footer__container-logo {
       justify-self: flex-end;
+
       img {
         width: 150px;
       }
@@ -72,12 +75,15 @@ footer {
     margin: 30px;
     text-align: center;
   }
+
   .creators {
     font-weight: 400;
     color: grey;
-    a{
+
+    a {
       font-weight: 600;
-      &:hover{
+
+      &:hover {
         color: $color-black;
         transition: .5s;
       }
